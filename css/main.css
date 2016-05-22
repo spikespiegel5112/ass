@@ -1,7 +1,7 @@
 .main_container{
 	width: 100%;
 	height: 100%;
-	
+	overflow: hidden;
 }
 .popup_container{
 	width: 100%;
@@ -64,4 +64,193 @@
 .index_carousel_wrapper ul li img{
 	display: block;
 	width: 100%;
+}
+.index_todaytopic_wrapper{
+	margin: 0.5rem 0;
+	width: 100%;
+	min-height: 3rem;
+}
+.index_todaytopic_wrapper a{
+	display: block;
+}
+.index_todaytopic_wrapper img{
+	display: block;
+	width:100%;
+}
+.index_rapidconsultation_wrapper{
+	margin: 0.5rem 0;
+	width: 100%;
+	height: 3.9rem;
+}
+.index_rapidconsultation_wrapper a{
+	display: block;
+}
+.index_rapidconsultation_wrapper img{
+	width: 100%;
+}
+.index_consultinglist_wrapper{
+	margin: 0 0 0.5rem 0;
+	padding: 0 0 0 0.5rem;
+	background-color: #fff;
+}
+.index_consultinglist_wrapper ul{
+	overflow: hidden;
+	border-top: 1px solid #e5e5e5;
+}
+.index_consultinglist_wrapper li{
+	margin: 0.5rem 0;
+}
+.index_consultinglist_wrapper ul li a{
+	display: block;
+	overflow: hidden;
+}
+.index_consultinglist_wrapper .avatar{
+	display: inline-block;
+	margin: 0.2rem;
+	width: 2.8rem;
+	height: 2.8rem;
+	border-radius: 50%;
+	vertical-align: top;
+}
+.index_consultinglist_wrapper .content{
+	display: inline-block;
+	padding: 0 0 0.6rem 0;
+	font-size: 0.5rem;
+	vertical-align: middle;
+	width: 12rem;
+	border-bottom: 1px solid #e5e5e5;
+}
+.index_consultinglist_wrapper .content label{
+	display: block;
+	margin: 0.2rem 0;
+	font-size: 0.7rem;
+}
+.index_consultinglist_wrapper .content p{
+	height: 1.5rem;
+	line-height: 0.8rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.index_consultinglist_wrapper .content .article{
+	display: inline-block;
+	width: 9.5rem;
+	vertical-align: middle;
+}
+.index_consultinglist_wrapper .info{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+.index_consultinglist_wrapper .info label{
+	display: block;
+
+	font-size: 0.7rem;
+	color: #a7a7a7;
+}
+.index_consultinglist_wrapper .info span{
+	display: inline-block;
+	margin: 0.5rem auto;
+	padding: 0.1rem 0.6rem;
+	background-color: red;
+	border-radius: 1rem;
+	color: #fff;
+	font-size: 0.5rem;
+	vertical-align: middle;
+}
+.index_hotspot_wrapper{
+	padding: 0 0 0 0.5rem;
+	background-color: #fff;
+}
+.index_hotspot_wrapper ul{
+	overflow: hidden;
+}
+.index_hotspot_wrapper li{
+	padding: 0.5rem 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+.index_hotspot_wrapper li:first-child{
+	border-top: 1px solid #e5e5e5;
+}
+.index_hotspot_wrapper li a{
+	display: block;
+	overflow: hidden;
+}
+.index_hotspot_wrapper .avatar{
+	display: inline-block;
+	width: 4rem;
+	height: 3rem;
+	vertical-align: top;
+}
+.index_hotspot_wrapper .content{
+	display: inline-block;
+	width: 10.5rem;
+	vertical-align: middle;
+}
+.index_hotspot_wrapper .content .article label{
+	display: block;
+	margin: 0 0 0.6rem 0;
+	height: 1.9rem;
+	font-size: 0.7rem;
+	overflow: hidden;
+}
+.index_hotspot_wrapper .content .info{
+	height: 0.6rem;
+	font-size: 0;
+}
+.index_hotspot_wrapper .content .info label{
+	display: inline-block;
+	font-size: 0.5rem;
+	color: #999;
+}
+/*~~~~~~~~~~cashregister.html~~~~~~~~~~*/
+.cashreg_serviceitem_wrapper{
+	margin: 0 0 0 1rem;
+	padding: 0.5rem 0;
+	width: 15rem;
+	border-top: 1px solid #ccc;
+}
+.cashreg_serviceitem_wrapper h6{
+	font-size: 0.7rem;
+	line-height: 1.5rem;
+}
+.cashreg_serviceitem_wrapper p{
+	font-size: 0.7rem;
+	color: #666;
+}
+.cashreg_paymentmethod_wrapper ul{
+	text-align: center;
+}
+.cashreg_paymentmethod_wrapper ul li{
+	display: inline-block;
+	width: 3rem;
+	text-align: center;
+}
+.cashreg_paymentmethod_wrapper ul li a{
+	display: block;
+}
+.cashreg_paymentmethod_wrapper ul li>label{
+	font-size: 0.6rem;
+	color: #333;
+	text-align: center;
+}
+.cashreg_paymentmethod_wrapper .icon{
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	border-radius: 50%;
+	color: #fff;
+}
+.cashreg_paymentmethod_wrapper .weichat{
+	background-color: #00a3cc;
+}
+.cashreg_paymentmethod_wrapper .alipay{
+	color: #00a3cc;
+}
+.cashreg_paymentmethod_wrapper .balance{
+	font-size: 0.8rem;
+	line-height: 1.7rem;
+	background-color: #00a3cc;
 }
