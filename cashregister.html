@@ -9,7 +9,7 @@
 	<meta name="author" content="">
 	<meta name="keywords" content="">
 	<title>收银台</title>
-	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1463918950_67518.css" type="text/css" media="all">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1463936352_3249972.css" type="text/css" media="all">
 	<!-- build:css css/all.min.css -->
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
@@ -50,7 +50,7 @@
 				<ul>
 					<li>
 						<a href="javascript:;">
-							<label class='icon ybiconfont ybicon-wechatsolid weichat'></label>
+							<label class='icon ybiconfont ybicon-wechatsolid wechat'></label>
 							<span class='common_checkbox_item'>
 								<i class='ybiconfont ybicon-ok'></i>
 							</span>
@@ -60,7 +60,7 @@
 					<li>
 						<a href="javascript:;">
 							<label class='icon ybiconfont ybicon-alipay alipay'></label>
-							<span class='common_checkbox_item'>
+							<span class='common_checkbox_item active'>
 								<i class='ybiconfont ybicon-ok'></i>
 							</span>
 						</a>
@@ -78,8 +78,13 @@
 				</ul>
 			</div>
 		</div>
+		<div class='common_block_wrapper'>
+			<div class='cashreg_sum_wrapper'>
+				<span class='sum'>共计：￥8</span>
+				<a class='ok' href="javascript:;">立即支付</a>
+			</div>
+		</div>
 	</div>
-<body>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/base.js"></script>
 	<script>
@@ -87,6 +92,9 @@
 		$.remResizing({
 			fontsize:20
 		});
+	})
+	$('.cashreg_paymentmethod_wrapper li').on('touchend', function(){
+		$(this).find('.common_checkbox_item').addClass('active').end().siblings().find('.common_checkbox_item').removeClass('active')
 	})
 	</script>
 </body>

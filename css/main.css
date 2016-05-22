@@ -222,6 +222,7 @@
 }
 .cashreg_paymentmethod_wrapper ul li{
 	display: inline-block;
+	margin: 0.2rem 0.7rem;
 	width: 3rem;
 	text-align: center;
 }
@@ -235,22 +236,56 @@
 }
 .cashreg_paymentmethod_wrapper .icon{
 	display: inline-block;
+	margin: 0.3rem 0;
 	width: 2rem;
 	height: 2rem;
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	line-height: 2rem;
 	border-radius: 50%;
 	color: #fff;
 }
-.cashreg_paymentmethod_wrapper .weichat{
-	background-color: #00a3cc;
+.cashreg_paymentmethod_wrapper .wechat{
+	background-color: #8dc81b;
 }
 .cashreg_paymentmethod_wrapper .alipay{
-	color: #00a3cc;
+	background-color: #606974;
 }
 .cashreg_paymentmethod_wrapper .balance{
-	font-size: 0.8rem;
-	line-height: 1.7rem;
+	font-size: 0.7rem;
+	line-height: 2rem;
 	background-color: #00a3cc;
+}
+.cashreg_sum_wrapper .ok{
+	display: inline-block;
+	width: 50%;
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 0.8rem;
+	text-align: center;
+	color: #fff;
+	background-color: #e60853;
+}
+.cashreg_sum_wrapper .sum{
+	display: inline-block;
+	width: 48%;
+	text-align: center;
+	color: #e60853;
+}
+/*~~~~~~~~~~rapidconsultation.html~~~~~~~~~~*/
+.consult_consultmenu_wrapper{
+	width: 100%;
+}
+.consult_consultmenu_wrapper td{
+	border:1px solid #ccc;
+	width: 5rem;
+	height: 5rem;
+	text-align: center;
+	font-size: 0.7rem;
+}
+.consult_consultmenu_wrapper td span{
+	display: block;
+	margin: 0 auto;
+	width: 3rem;
+	height: 3rem;
 }
