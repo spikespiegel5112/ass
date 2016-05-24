@@ -1,14 +1,8 @@
-/**
- * Created by xingweiwei on 15/6/19.
- */
 (function($, window) {
 
 	'use strict'
 
-	//默认隐藏标题，自动处理成 XXX...
-	//全文自动设置为 title属性
 	$.fn.extend({
-		
 		popup: function(options) {
 			options = $.extend({
 				closebtn: '',

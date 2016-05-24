@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<title>服务评价</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464126730_9261143.css" type="text/css" media="all">
+	<!-- build:css css/all.min.css -->
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+	<!-- endbuild -->
+</head>
+
+<body>
+	<div class='common_header_wrapper bg_00c8b4'>
+		<a class='left_btn back_btn' href='javascript:;'>
+			<span class="ybiconfont ybicon-backward2 color_fff"></span>
+		</a>
+		<p class='color_fff'>服务评价</p>
+	</div>
+	<div class='main_container bg_efefef'>
+		<div class='common_avatar_wrapper'>
+			<img class='avatar' src="img/avatar_120_120_00000.jpg">
+			<h6 class='name'>孙律师</h6>
+			<p class="common_explain_item">服务人数 <span>217人</span> / 综合评分：<span>4.8分</span></p>
+			<span class='bg'></span>
+		</div>
+		<div class='common_dashtitle_wrapper'>
+			<label>星级评价</label>
+			<span></span>
+		</div>
+		<div class='common_pentagram_wrapper'>
+			<ul>
+				<li>
+					<a class='ybiconfont ybicon-pentagramhollow' href="javascript:;"></a>
+				</li>
+				<li>
+					<a class='ybiconfont ybicon-pentagramhollow' href="javascript:;"></a>
+				</li>
+				<li>
+					<a class='ybiconfont ybicon-pentagramhollow' href="javascript:;"></a>
+				</li>
+				<li>
+					<a class='ybiconfont ybicon-pentagramhollow' href="javascript:;"></a>
+				</li>
+				<li>
+					<a class='ybiconfont ybicon-pentagramhollow' href="javascript:;"></a>
+				</li>
+			</ul>
+		</div>
+		<div class='common_dashtitle_wrapper'>
+			<label>对他的印象</label>
+			<span></span>
+		</div>
+		<ul class="common_chooselistround_wrapper">
+			<li>
+				<a href="javascript:;">高颜值</a>
+			</li>
+			<li>
+				<a href="javascript:;">暖男</a>
+			</li>
+			<li>
+				<a href="javascript:;">幽默</a>
+			</li>
+			<li>
+				<a href="javascript:;">实力</a>
+			</li>
+			<li>
+				<a href="javascript:;">绅士</a>
+			</li>
+			<li>
+				<a href="javascript:;">才子</a>
+			</li>
+			<li>
+				<a href="javascript:;">才子</a>
+			</li>
+			<li class='nagtive'>
+				<a href="javascript:;">才子</a>
+			</li>
+			<li class='nagtive'>
+				<a href="javascript:;">才子</a>
+			</li>
+		</ul>
+		<textarea class="evaluate_textarea_item" placeholder="请输入评价内容"></textarea>
+		<a class="common_btn_item fullwidth" href="javascript:;">确定</a>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+	<script>
+	$(function() {
+		$.remResizing({
+			fontsize: 20
+		});
+	})
+	$('.consult_consultmethod_wrapper li').on('touchend', function() {
+		$(this).find('.common_checkbox_item').addClass('active').end().siblings().find('.common_checkbox_item').removeClass('active')
+	});
+	//五角星评分
+	$('.common_pentagram_wrapper li').on('touchend', function() {
+		var $this = $(this),
+			pentagramLiEl = $('.common_pentagram_wrapper li'),
+			thisaEl = $this.find('a'),
+			thisIndex = $this.index();
+		if (thisaEl.hasClass('ybicon-pentagramhollow')) {
+			thisaEl.removeClass('ybicon-pentagramhollow').addClass('ybicon-pentagramsolid active')
+		}
+		for (var i = 0; i < thisIndex; i++) {
+			pentagramLiEl.eq(i).find('a').removeClass('ybicon-pentagramhollow').addClass('ybicon-pentagramsolid active');
+		};
+		for (var i = 4; i > thisIndex; i--) {
+			pentagramLiEl.eq(i).find('a').removeClass('ybicon-pentagramsolid active').addClass('ybicon-pentagramhollow')
+		};
+	});
+	//通用选择器
+	$('.common_chooselistround_wrapper li').on('touchend', function() {
+		$(this).addClass('active').siblings().removeClass('active');
+	})
+	</script>
+</body>
+
+</html>

@@ -8,8 +8,8 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="keywords" content="">
-	<title>登录</title>
-	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1463936352_3249972.css" type="text/css" media="all">
+	<title>给律师加加油</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464126730_9261143.css" type="text/css" media="all">
 	<!-- build:css css/all.min.css -->
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
@@ -32,8 +32,8 @@
 					给律师加加油
 				</div>
 				<div class='common_title_item '>
-					<span class='bg_f19149'></span>
-					<h6 class='color_f19149'>支付方式</h6>
+					<span class='bg_00c8b4'></span>
+					<h6>支付方式</h6>
 				</div>
 				<ul class='common_chooselistround_wrapper'>
 					<li>
@@ -56,8 +56,8 @@
 					</li>
 				</ul>
 				<div class='common_title_item '>
-					<span class='bg_f19149'></span>
-					<h6 class='color_f19149'>选择支付方式</h6>
+					<span class='bg_00c8b4'></span>
+					<h6>选择支付方式</h6>
 				</div>
 				<div class='cash_paymentmethod_wrapper'>
 					<ul>
@@ -90,7 +90,13 @@
 						</li>
 					</ul>
 				</div>
+				<div class='common_btn_wrapper'>
+					<a class="common_btn_item halfwidth round" href="javascript:;">确定</a>
+					<a class="common_btn_item halfwidth round" href="javascript:;">确定</a>
+				</div>	
+				
 			</div>
+
 		</div>
 	</div>
 
@@ -103,10 +109,7 @@
 				fontsize: 20,
 				basedonnarrow: true
 			});
-			$('.cash_sum_wrapper').align({
-				ignore: '.common_block_wrapper',
-				position: 'bottom'
-			});
+			$('.popup_wrapper').align();
 			//通用选择器
 			$('.common_chooselistround_wrapper li').on('touchend', function() {
 				$(this).addClass('active').siblings().removeClass('active');
