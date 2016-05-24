@@ -8,32 +8,32 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="keywords" content="">
-	<title>收银台</title>
+	<title>快速咨询</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1463936352_3249972.css" type="text/css" media="all">
 	<!-- build:css css/all.min.css -->
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
 	<!-- endbuild -->
-
 </head>
+
 <body>
 	<div class='common_header_wrapper'>
 		<a class='left_btn back_btn' href='javascript:;'>
 			<span class="ybiconfont ybicon-backward2"></span>
 		</a>
-		<p>收银台</p>
+		<p>快速咨询</p>
 	</div>
 	<div class='main_container bg_efefef'>
 		<div class='common_block_wrapper'>
 			<ul class='common_procedure_wrapper'>
-				<li>
+				<li class='active'>
 					<div>
 						<label>1</label>
 						<p>选择问题类型</p>
 					</div>
 				</li>
-				<li>
+				<li class='active'>
 					<span></span>
 					<div>
 						<label>1</label>
@@ -50,81 +50,48 @@
 			</ul>
 		</div>
 		<div class='common_block_wrapper'>
-			<table class='consult_consultmenu_wrapper'>
-				<tbody>
-					<tr>
-						<td>
-							<a href="javascript:;">
-								<span></span>
-								<label>家庭婚姻</label>
-							</a>
-						</td>
-						<td>
-							<a href="javascript:;">
-								<span></span>
-								<label>土地房产</label>
-							</a>
-						</td>
-						<td>
-							<a href="javascript:;">
-								<span></span>
-								<label>交通事故</label>
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="javascript:;">
-								<span></span>
-								<label>家庭婚姻</label>
-							</a>
-						</td>
-						<td>
-							<a href="javascript:;">
-								<span></span>
-								<label>土地房产</label>
-							</a>
-						</td>
-						<td>
-							<a href="javascript:;">
-								<span></span>
-								<label>交通事故</label>
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="javascript:;">
-								<span></span>
-								<label>家庭婚姻</label>
-							</a>
-						</td>
-						<td>
-							<a href="javascript:;">
-								<span></span>
-								<label>土地房产</label>
-							</a>
-						</td>
-						<td>
-							<a href="javascript:;">
-								<span></span>
-								<label>交通事故</label>
-							</a>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+			<div class="common_title_item ">
+				<h6 class="">家庭婚姻</h6>
+			</div>
+		</div>
+		<div class='common_block_wrapper'>
+			<div class='consult_describeissue_item'>
+				<textarea class='consult_textarea_item' placeholder='请简单描述你的问题'></textarea>
+				<ul class='consult_consultmethod_wrapper'>
+					<li>
+						<span class='common_checkbox_item'>
+							<i class='ybiconfont ybicon-ok'></i>
+						</span>
+						<label class='common_checkboxtext_item'>文字咨询</label>
+					</li>
+					<li>
+						<span class='common_checkbox_item active'>
+							<i class='ybiconfont ybicon-ok'></i>
+						</span>
+						<label class='common_checkboxtext_item'>电话咨询</label>
+					</li>
+				</ul>
+				
+			</div>
+			<a class='common_btn_item fullwidth' href="javascript:;">立即支付</a>
+				<div class="cash_serviceitem_wrapper">
+					<p>文字咨询：0元&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp电话咨询：8元</p>
+				</div>
+			<div class="cash_sum_wrapper">
+				<span class="sum">共计：￥8</span>
+				<a class="common_btn_item halfwidth" href="javascript:;">立即支付</a>
+			</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/base.js"></script>
 	<script>
-	$(function(){
+	$(function() {
 		$.remResizing({
-			fontsize:20
+			fontsize: 20
 		});
 	})
-	$('.cashreg_paymentmethod_wrapper li').on('touchend', function(){
+	$('.consult_consultmethod_wrapper li').on('touchend', function() {
 		$(this).find('.common_checkbox_item').addClass('active').end().siblings().find('.common_checkbox_item').removeClass('active')
 	})
 	</script>

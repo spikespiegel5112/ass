@@ -30,7 +30,7 @@
 				<span class='bg_f19149'></span>
 				<h6 class='color_f19149'>正在咨询律师</h6>
 			</div>
-			<div class='cashreg_serviceitem_wrapper'>
+			<div class='cash_serviceitem_wrapper'>
 				<h6>文字咨询<span>8元/2次</span></h6>
 				<p>分为限时体验咨询（免费）和深度咨询两类。</p>
 			</div>
@@ -46,7 +46,7 @@
 				<span class='bg_f19149'></span>
 				<h6 class='color_f19149'>支付方式</h6>
 			</div>
-			<div class='cashreg_paymentmethod_wrapper'>
+			<div class='cash_paymentmethod_wrapper'>
 				<ul>
 					<li>
 						<a href="javascript:;">
@@ -79,9 +79,9 @@
 			</div>
 		</div>
 		<div class='common_block_wrapper'>
-			<div class='cashreg_sum_wrapper'>
+			<div class='cash_sum_wrapper'>
 				<span class='sum'>共计：￥8</span>
-				<a class='ok' href="javascript:;">立即支付</a>
+				<a class='common_btn_item halfwidth' href="javascript:;">立即支付</a>
 			</div>
 		</div>
 	</div>
@@ -93,7 +93,8 @@
 			fontsize:20
 		});
 	})
-	$('.cashreg_paymentmethod_wrapper li').on('touchend', function(){
+	//选择支付方式
+	$('.cash_paymentmethod_wrapper li').on('touchend', function(){
 		$(this).find('.common_checkbox_item').addClass('active').end().siblings().find('.common_checkbox_item').removeClass('active')
 	})
 	</script>

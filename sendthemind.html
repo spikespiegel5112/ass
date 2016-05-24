@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<title>登录</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1463936352_3249972.css" type="text/css" media="all">
+	<!-- build:css css/all.min.css -->
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+	<!-- endbuild -->
+</head>
+
+<body class='bg_efefef'>
+	<div class='main_container'>
+		<div class='common_header_wrapper'>
+			<a class='left_btn back_btn' href='javascript:;'>
+				<span class="ybiconfont ybicon-backward2"></span>
+			</a>
+			<p></p>
+		</div>
+		<div class='popup_container'>
+			<div class='popup_wrapper'>
+				<a class='popupclose_btn ybiconfont ybicon-closebtn' href="javascript:;"></a>
+				<div class='common_popuptitle_item'>
+					给律师加加油
+				</div>
+				<div class='common_title_item '>
+					<span class='bg_f19149'></span>
+					<h6 class='color_f19149'>支付方式</h6>
+				</div>
+				<ul class='common_chooselistround_wrapper'>
+					<li>
+						<a href="javascript:;">5元</a>
+					</li>
+					<li>
+						<a href="javascript:;">8元</a>
+					</li>
+					<li>
+						<a href="javascript:;">18元</a>
+					</li>
+					<li>
+						<a href="javascript:;">30元</a>
+					</li>
+					<li>
+						<a href="javascript:;">50元</a>
+					</li>
+					<li>
+						<a href="javascript:;">68元</a>
+					</li>
+				</ul>
+				<div class='common_title_item '>
+					<span class='bg_f19149'></span>
+					<h6 class='color_f19149'>选择支付方式</h6>
+				</div>
+				<div class='cash_paymentmethod_wrapper'>
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<label class='icon ybiconfont ybicon-wechatsolid wechat'></label>
+								<span class='common_checkbox_item'>
+									<i class='ybiconfont ybicon-ok'></i>
+								</span>
+							</a>
+							<label>微信支付</label>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<label class='icon ybiconfont ybicon-alipay alipay'></label>
+								<span class='common_checkbox_item active'>
+									<i class='ybiconfont ybicon-ok'></i>
+								</span>
+							</a>
+							<label>支付宝支付</label>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<label class='icon balance'>余额</label>
+								<span class='common_checkbox_item'>
+									<i class='ybiconfont ybicon-ok'></i>
+								</span>
+							</a>
+							<label>余额支付</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<body>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script>
+		$(function() {
+			$.remResizing({
+				fontsize: 20,
+				basedonnarrow: true
+			});
+			$('.cash_sum_wrapper').align({
+				ignore: '.common_block_wrapper',
+				position: 'bottom'
+			});
+			//通用选择器
+			$('.common_chooselistround_wrapper li').on('touchend', function() {
+				$(this).addClass('active').siblings().removeClass('active');
+			})
+			//选择支付方式
+			$('.cash_paymentmethod_wrapper li').on('touchend', function() {
+				$(this).find('.common_checkbox_item').addClass('active').end().siblings().find('.common_checkbox_item').removeClass('active')
+			})
+		})
+		</script>
+	</body>
+
+</html>

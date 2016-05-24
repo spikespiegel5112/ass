@@ -1,50 +1,50 @@
-.main_container{
+.main_container {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
 }
-.popup_container{
+.popup_container {
 	width: 100%;
 	height: 100%;
 	background: #8f8f8f;
 	position: fixed;
 	top: 0;
 }
-.popup_wrapper{
+.popup_wrapper {
 	margin: 1rem auto;
 	width: 13rem;
 	background: #fff;
 	border-radius: 0.25rem;
 	position: relative;
 }
-.loginmain_wrapper{
+.loginmain_wrapper {
 	padding: 0.5rem;
 }
-.loginmain_wrapper ul{
+.loginmain_wrapper ul {
 	margin: 0.5rem auto;
 	width: 12rem;
 }
-.loginmain_wrapper li{
+.loginmain_wrapper li {
 	width: 100%;
 	height: 1.8rem;
 	position: relative;
 }
-.loginmain_wrapper li:first-child input{
+.loginmain_wrapper li:first-child input {
 	border-bottom: none;
 }
-.loginmain_wrapper input{
+.loginmain_wrapper input {
 	display: block;
 	padding: 0 0.5rem;
 	width: 100%;
 	height: 100%;
-	box-sizing:border-box;
+	box-sizing: border-box;
 	font-size: 0.8rem;
 	border-top: 1px solid #d9d9d9;
 	border-bottom: 1px solid #d9d9d9;
 	border-left: 1px solid #d9d9d9;
 	border-right: 1px solid #d9d9d9;
 }
-.loginform_wrapper a{
+.loginform_wrapper a {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -58,53 +58,54 @@
 }
 
 /*~~~~~~~~~~index.html~~~~~~~~~~*/
-.index_carousel_wrapper{
+
+.index_carousel_wrapper {
 	width: 100%;
 }
-.index_carousel_wrapper ul li img{
+.index_carousel_wrapper ul li img {
 	display: block;
 	width: 100%;
 }
-.index_todaytopic_wrapper{
+.index_todaytopic_wrapper {
 	margin: 0.5rem 0;
 	width: 100%;
 	min-height: 3rem;
 }
-.index_todaytopic_wrapper a{
+.index_todaytopic_wrapper a {
 	display: block;
 }
-.index_todaytopic_wrapper img{
+.index_todaytopic_wrapper img {
 	display: block;
-	width:100%;
+	width: 100%;
 }
-.index_rapidconsultation_wrapper{
+.index_rapidconsultation_wrapper {
 	margin: 0.5rem 0;
 	width: 100%;
 	height: 3.9rem;
 }
-.index_rapidconsultation_wrapper a{
+.index_rapidconsultation_wrapper a {
 	display: block;
 }
-.index_rapidconsultation_wrapper img{
+.index_rapidconsultation_wrapper img {
 	width: 100%;
 }
-.index_consultinglist_wrapper{
+.index_consultinglist_wrapper {
 	margin: 0 0 0.5rem 0;
 	padding: 0 0 0 0.5rem;
 	background-color: #fff;
 }
-.index_consultinglist_wrapper ul{
+.index_consultinglist_wrapper ul {
 	overflow: hidden;
 	border-top: 1px solid #e5e5e5;
 }
-.index_consultinglist_wrapper li{
+.index_consultinglist_wrapper li {
 	margin: 0.5rem 0;
 }
-.index_consultinglist_wrapper ul li a{
+.index_consultinglist_wrapper ul li a {
 	display: block;
 	overflow: hidden;
 }
-.index_consultinglist_wrapper .avatar{
+.index_consultinglist_wrapper .avatar {
 	display: inline-block;
 	margin: 0.2rem;
 	width: 2.8rem;
@@ -112,7 +113,7 @@
 	border-radius: 50%;
 	vertical-align: top;
 }
-.index_consultinglist_wrapper .content{
+.index_consultinglist_wrapper .content {
 	display: inline-block;
 	padding: 0 0 0.6rem 0;
 	font-size: 0.5rem;
@@ -120,34 +121,33 @@
 	width: 12rem;
 	border-bottom: 1px solid #e5e5e5;
 }
-.index_consultinglist_wrapper .content label{
+.index_consultinglist_wrapper .content label {
 	display: block;
 	margin: 0.2rem 0;
 	font-size: 0.7rem;
 }
-.index_consultinglist_wrapper .content p{
+.index_consultinglist_wrapper .content p {
 	height: 1.5rem;
 	line-height: 0.8rem;
 	text-overflow: ellipsis;
 	overflow: hidden;
 }
-.index_consultinglist_wrapper .content .article{
+.index_consultinglist_wrapper .content .article {
 	display: inline-block;
 	width: 9.5rem;
 	vertical-align: middle;
 }
-.index_consultinglist_wrapper .info{
+.index_consultinglist_wrapper .info {
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
 }
-.index_consultinglist_wrapper .info label{
+.index_consultinglist_wrapper .info label {
 	display: block;
-
 	font-size: 0.7rem;
 	color: #a7a7a7;
 }
-.index_consultinglist_wrapper .info span{
+.index_consultinglist_wrapper .info span {
 	display: inline-block;
 	margin: 0.5rem auto;
 	padding: 0.1rem 0.6rem;
@@ -157,86 +157,88 @@
 	font-size: 0.5rem;
 	vertical-align: middle;
 }
-.index_hotspot_wrapper{
+.index_hotspot_wrapper {
 	padding: 0 0 0 0.5rem;
 	background-color: #fff;
 }
-.index_hotspot_wrapper ul{
+.index_hotspot_wrapper ul {
 	overflow: hidden;
 }
-.index_hotspot_wrapper li{
+.index_hotspot_wrapper li {
 	padding: 0.5rem 0;
 	border-bottom: 1px solid #e5e5e5;
 }
-.index_hotspot_wrapper li:first-child{
+.index_hotspot_wrapper li:first-child {
 	border-top: 1px solid #e5e5e5;
 }
-.index_hotspot_wrapper li a{
+.index_hotspot_wrapper li a {
 	display: block;
 	overflow: hidden;
 }
-.index_hotspot_wrapper .avatar{
+.index_hotspot_wrapper .avatar {
 	display: inline-block;
 	width: 4rem;
 	height: 3rem;
 	vertical-align: top;
 }
-.index_hotspot_wrapper .content{
+.index_hotspot_wrapper .content {
 	display: inline-block;
 	width: 10.5rem;
 	vertical-align: middle;
 }
-.index_hotspot_wrapper .content .article label{
+.index_hotspot_wrapper .content .article label {
 	display: block;
 	margin: 0 0 0.6rem 0;
 	height: 1.9rem;
 	font-size: 0.7rem;
 	overflow: hidden;
 }
-.index_hotspot_wrapper .content .info{
+.index_hotspot_wrapper .content .info {
 	height: 0.6rem;
 	font-size: 0;
 }
-.index_hotspot_wrapper .content .info label{
+.index_hotspot_wrapper .content .info label {
 	display: inline-block;
 	font-size: 0.5rem;
 	color: #999;
 }
-/*~~~~~~~~~~cashregister.html~~~~~~~~~~*/
-.cashreg_serviceitem_wrapper{
+
+/*~~~~~~~~~~cashister.html~~~~~~~~~~*/
+
+.cash_serviceitem_wrapper {
 	margin: 0 0 0 1rem;
 	padding: 0.5rem 0;
 	width: 15rem;
 	border-top: 1px solid #ccc;
 }
-.cashreg_serviceitem_wrapper h6{
+.cash_serviceitem_wrapper h6 {
 	font-size: 0.7rem;
 	line-height: 1.5rem;
 }
-.cashreg_serviceitem_wrapper p{
+.cash_serviceitem_wrapper p {
 	font-size: 0.7rem;
 	color: #666;
 }
-.cashreg_paymentmethod_wrapper ul{
+.cash_paymentmethod_wrapper ul {
 	text-align: center;
 }
-.cashreg_paymentmethod_wrapper ul li{
+.cash_paymentmethod_wrapper ul li {
 	display: inline-block;
-	margin: 0.2rem 0.7rem;
-	width: 3rem;
+	margin: 0.2rem 0.5rem;
+	width: 24%;
 	text-align: center;
 }
-.cashreg_paymentmethod_wrapper ul li a{
+.cash_paymentmethod_wrapper ul li a {
 	display: block;
 }
-.cashreg_paymentmethod_wrapper ul li>label{
+.cash_paymentmethod_wrapper ul li>label {
 	font-size: 0.6rem;
 	color: #333;
 	text-align: center;
 }
-.cashreg_paymentmethod_wrapper .icon{
-	display: inline-block;
-	margin: 0.3rem 0;
+.cash_paymentmethod_wrapper .icon {
+	display: block;
+	margin: 0.3rem auto;
 	width: 2rem;
 	height: 2rem;
 	text-align: center;
@@ -245,47 +247,63 @@
 	border-radius: 50%;
 	color: #fff;
 }
-.cashreg_paymentmethod_wrapper .wechat{
+.cash_paymentmethod_wrapper .wechat {
 	background-color: #8dc81b;
 }
-.cashreg_paymentmethod_wrapper .alipay{
+.cash_paymentmethod_wrapper .alipay {
 	background-color: #606974;
 }
-.cashreg_paymentmethod_wrapper .balance{
+.cash_paymentmethod_wrapper .balance {
 	font-size: 0.7rem;
 	line-height: 2rem;
 	background-color: #00a3cc;
 }
-.cashreg_sum_wrapper .ok{
-	display: inline-block;
-	width: 50%;
-	height: 2rem;
-	line-height: 2rem;
-	font-size: 0.8rem;
-	text-align: center;
-	color: #fff;
-	background-color: #e60853;
+.cash_sum_wrapper{
+	/*padding: 7rem 0 0 0;*/
 }
-.cashreg_sum_wrapper .sum{
+
+.cash_sum_wrapper .sum {
 	display: inline-block;
 	width: 48%;
 	text-align: center;
 	color: #e60853;
 }
+
 /*~~~~~~~~~~rapidconsultation.html~~~~~~~~~~*/
-.consult_consultmenu_wrapper{
+
+.consult_consultmenu_wrapper {
 	width: 100%;
 }
-.consult_consultmenu_wrapper td{
-	border:1px solid #ccc;
+.consult_consultmenu_wrapper td {
+	border: 1px solid #ccc;
 	width: 5rem;
 	height: 5rem;
 	text-align: center;
 	font-size: 0.7rem;
 }
-.consult_consultmenu_wrapper td span{
+.consult_consultmenu_wrapper td a {
+	display: block;
+}
+.consult_consultmenu_wrapper td span {
 	display: block;
 	margin: 0 auto;
 	width: 3rem;
 	height: 3rem;
+}
+
+/*~~~~~~~~~~rapidconsultation_step2.html~~~~~~~~~~*/
+.consult_textarea_item {
+	border: 0;
+	padding: 0.5rem;
+	width: 100%;
+	height: 10rem;
+	font-size: 1rem;
+	box-sizing: border-box;
+}
+.consult_consultmethod_wrapper{
+	padding: 0.5rem 0;
+}
+.consult_consultmethod_wrapper li {
+	display: inline-block;
+	margin: 0 3rem 0 0.3rem;
 }

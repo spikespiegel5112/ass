@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<title>快速咨询</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1463936352_3249972.css" type="text/css" media="all">
+	<!-- build:css css/all.min.css -->
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+	<!-- endbuild -->
+
+</head>
+<body>
+	<div class='common_header_wrapper'>
+		<a class='left_btn back_btn' href='javascript:;'>
+			<span class="ybiconfont ybicon-backward2"></span>
+		</a>
+		<p>快速咨询</p>
+	</div>
+	<div class='main_container bg_efefef'>
+		<div class='common_block_wrapper'>
+			<ul class='common_procedure_wrapper'>
+				<li class='active'>
+					<div>
+						<label>1</label>
+						<p>选择问题类型</p>
+					</div>
+				</li>
+				<li>
+					<span></span>
+					<div>
+						<label>1</label>
+						<p>选择问题类型</p>
+					</div>
+				</li>
+				<li>
+					<span></span>
+					<div>
+						<label>1</label>
+						<p>选择问题类型</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class='common_block_wrapper'>
+			<table class='consult_consultmenu_wrapper'>
+				<tbody>
+					<tr>
+						<td>
+							<a href="javascript:;">
+								<span></span>
+								<label>家庭婚姻</label>
+							</a>
+						</td>
+						<td>
+							<a href="javascript:;">
+								<span></span>
+								<label>土地房产</label>
+							</a>
+						</td>
+						<td>
+							<a href="javascript:;">
+								<span></span>
+								<label>交通事故</label>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="javascript:;">
+								<span></span>
+								<label>家庭婚姻</label>
+							</a>
+						</td>
+						<td>
+							<a href="javascript:;">
+								<span></span>
+								<label>土地房产</label>
+							</a>
+						</td>
+						<td>
+							<a href="javascript:;">
+								<span></span>
+								<label>交通事故</label>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="javascript:;">
+								<span></span>
+								<label>家庭婚姻</label>
+							</a>
+						</td>
+						<td>
+							<a href="javascript:;">
+								<span></span>
+								<label>土地房产</label>
+							</a>
+						</td>
+						<td>
+							<a href="javascript:;">
+								<span></span>
+								<label>交通事故</label>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+	<script>
+	$(function(){
+		$.remResizing({
+			fontsize:20
+		});
+	})
+	$('.cash_paymentmethod_wrapper li').on('touchend', function(){
+		$(this).find('.common_checkbox_item').addClass('active').end().siblings().find('.common_checkbox_item').removeClass('active')
+	})
+	</script>
+</body>
+
+</html>

@@ -21,6 +21,13 @@ body{
 .bg_47a0fe{
 	background-color: #47a0fe;
 }
+
+.halfwidth{
+	width: 50%;
+}
+.fullwidth{
+	width: 100%;
+}
 /*~~~~~~~~~~common head~~~~~~~~~~*/
 .common_header_wrapper
 {
@@ -385,9 +392,9 @@ body{
 }
 .common_title_item h6{
 	display: inline-block;
-	width: 14rem;
-	line-height: 0.6rem;
-	font-size: 0.6rem;
+	width: 90%;
+	line-height: 0.8rem;
+	font-size: 0.8rem;
 	vertical-align: middle;
 }
 .common_title_item span{
@@ -401,8 +408,8 @@ body{
 	float: right;
 }
 .common_checkbox_item{
-	display: block;
-	margin: 0 auto;
+	display: inline-block;
+/*	margin: 0 auto;*/
 	width: 0.8rem;
 	height: 0.8rem;
 	line-height: 0.8rem;
@@ -410,6 +417,7 @@ body{
 	border: 1px solid #999;
 	border-radius: 50%;
 	text-align: center;
+	vertical-align: middle;
 }
 .common_checkbox_item i{
 	display: none;
@@ -424,15 +432,36 @@ body{
 .common_checkbox_item.active i{
 	display: block;
 }
+.common_checkboxtext_item{
+	display: inline-block;
+	font-size: 0.8rem;
+	vertical-align: middle;
+}
+.common_btn_item {
+	display: inline-block;
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 0.8rem;
+	text-align: center;
+	color: #fff;
+	background-color: #e60853;
+}
 .common_procedure_wrapper{
 	padding: 0.5rem 0;
 	margin: 0 auto;
 	width: 15rem;
 	background-color: #fff;
 }
-.common_procedure_wrapper{
-	
+.common_procedure_wrapper .active label{
+	background-color: #00c8b4;
 }
+.common_procedure_wrapper .active span{
+	background-color: #00c8b4;
+}
+.common_procedure_wrapper .active p{
+	color: #00c8b4;
+}
+
 .common_procedure_wrapper li{
 	display: inline-block;
 	position: relative;
@@ -467,4 +496,28 @@ body{
 	position: absolute;
 	right: 2.5rem;
 	top: 0.35rem;
+}
+/*~~~~~~~~~~common_chooselistround_wrapper~~~~~~~~~~*/
+.common_chooselistround_wrapper{
+	width: 100%;
+
+}
+.common_chooselistround_wrapper li{
+	display: inline-block;
+	margin: 0 0.5rem;
+	min-width: 3rem;
+	overflow: hidden;
+}
+.common_chooselistround_wrapper .active a{
+	background-color: #C00131;
+	color: #fff;
+}
+.common_chooselistround_wrapper a{
+	display: block;
+	padding: 0.2rem 0.5rem;
+	border-radius: 1rem;
+	font-size: 0.7rem;
+	text-align: center;
+	color: #666;
+	border: 1px solid #999;
 }
