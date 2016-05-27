@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<title>给律师加加油</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464126730_9261143.css" type="text/css" media="all">
+	<!-- build:css css/all.min.css -->
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+	<!-- endbuild -->
+</head>
+
+<body class='bg_efefef'>
+	<div class='main_container'>
+		<div class='common_header_wrapper'>
+			<a class='left_btn back_btn' href='javascript:;'>
+				<span class="ybiconfont ybicon-backward2"></span>
+			</a>
+			<p></p>
+		</div>
+		<div class='popup_container'>
+			<div class='popup_wrapper'>
+				<a class='popupclose_btn ybiconfont ybicon-closebtn' href="javascript:;"></a>
+				<div class='common_avatar_wrapper'>
+					<img class='avatar' src="img/avatar_120_120_00000.jpg">
+					<h6 class='name'>孙律师</h6>
+					<p class="common_explain_item">服务人数 <span>217人</span> / 综合评分：<span>4.8分</span></p>
+					<!-- <span class='bg'></span> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<body>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script>
+		$(function() {
+			$.remResizing({
+				fontsize: 20,
+				basedonnarrow: true
+			});
+			$('.popup_wrapper').align();
+			//通用选择器
+			$('.common_chooselistround_wrapper li').on('touchend', function() {
+					$(this).addClass('active').siblings().removeClass('active');
+				})
+				//选择支付方式
+			$('.cash_paymentmethod_wrapper li').on('touchend', function() {
+				$(this).find('.common_checkbox_item').addClass('active').end().siblings().find('.common_checkbox_item').removeClass('active')
+			})
+		})
+		</script>
+	</body>
+
+</html>

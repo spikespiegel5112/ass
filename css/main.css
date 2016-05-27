@@ -314,34 +314,6 @@
 	font-size: 0.8rem;
 	box-sizing: border-box;
 }
-.common_sorryicon_item{
-	display: block;
-	margin: 0 auto;
-	width: 3.5rem;
-	height: 3.5rem;
-	line-height: 3.8rem;
-	font-size: 0.8rem;
-	text-align: center;
-	position: relative;
-	color: #000;
-	background-color: #ffeb00;
-	border-radius: 50%;
-}
-.common_sorryicon_item:after{
-	content: '';
-	display: block;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-color: transparent transparent #ffeb00 transparent;
-	border-width: 0 0.5rem 1rem 0.5rem;
-	position: absolute;
-	bottom: 0rem;
-	transform: rotate(-145deg);
-}
-.common_sorryicon_item i{
-	font-style: normal;
-}
 .evaluate_unsatisfiedhint_wrapper p{
 	text-align: center;
 	line-height: 1.4rem;
