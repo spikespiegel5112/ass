@@ -29,11 +29,35 @@
 			<div class='popup_wrapper'>
 				<a class='popupclose_btn ybiconfont ybicon-closebtn' href="javascript:;"></a>
 				<div class='common_avatar_wrapper'>
-					<img class='avatar' src="img/avatar_120_120_00000.jpg">
+					<div class='avatar'>
+						<img src="img/avatar_120_120_00000.jpg">
+					</div>
 					<h6 class='name'>孙律师</h6>
-					<p class="common_explain_item">服务人数 <span>217人</span> / 综合评分：<span>4.8分</span></p>
-					<!-- <span class='bg'></span> -->
 				</div>
+				<div class="common_pentagram_wrapper">
+					<p class='title'>对TA的印象</p>
+					<ul>
+						<li>
+							<a class="ybiconfont ybicon-pentagramhollow" href="javascript:;"></a>
+						</li>
+						<li>
+							<a class="ybiconfont ybicon-pentagramhollow" href="javascript:;"></a>
+						</li>
+						<li>
+							<a class="ybiconfont ybicon-pentagramhollow" href="javascript:;"></a>
+						</li>
+						<li>
+							<a class="ybiconfont ybicon-pentagramhollow" href="javascript:;"></a>
+						</li>
+						<li>
+							<a class="ybiconfont ybicon-pentagramhollow" href="javascript:;"></a>
+						</li>
+					</ul>
+					<p class='desc'>实力、幽默、回复太慢</p>
+				</div>
+				<div class='common_btn_wrapper'>
+					<a class="common_btn_item popupbtn_fullwidth round" href="javascript:;">分享他的名片</a>
+				</div>	
 			</div>
 		</div>
 	</div>
@@ -54,8 +78,24 @@
 				})
 				//选择支付方式
 			$('.cash_paymentmethod_wrapper li').on('touchend', function() {
-				$(this).find('.common_checkbox_item').addClass('active').end().siblings().find('.common_checkbox_item').removeClass('active')
-			})
+					$(this).find('.common_checkbox_item').addClass('active').end().siblings().find('.common_checkbox_item').removeClass('active')
+				})
+				//五角星评分
+			$('.common_pentagram_wrapper li').on('touchend', function() {
+				var $this = $(this),
+					pentagramLiEl = $('.common_pentagram_wrapper li'),
+					thisaEl = $this.find('a'),
+					thisIndex = $this.index();
+				if (thisaEl.hasClass('ybicon-pentagramhollow')) {
+					thisaEl.removeClass('ybicon-pentagramhollow').addClass('ybicon-pentagramsolid active')
+				}
+				for (var i = 0; i < thisIndex; i++) {
+					pentagramLiEl.eq(i).find('a').removeClass('ybicon-pentagramhollow').addClass('ybicon-pentagramsolid active');
+				};
+				for (var i = 4; i > thisIndex; i--) {
+					pentagramLiEl.eq(i).find('a').removeClass('ybicon-pentagramsolid active').addClass('ybicon-pentagramhollow')
+				};
+			});
 		})
 		</script>
 	</body>
