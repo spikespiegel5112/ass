@@ -9,7 +9,7 @@
 	<meta name="author" content="">
 	<meta name="keywords" content="">
 	<title>给律师加加油</title>
-	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464126730_9261143.css" type="text/css" media="all">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464688688_4408853.css" type="text/css" media="all">
 	<!-- build:css css/all.min.css -->
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
@@ -21,12 +21,12 @@
 	<div class='main_container'>
 		<div class='common_header_wrapper'>
 			<a class='left_btn back_btn' href='javascript:;'>
-				<span class="ybiconfont ybicon-backward2"></span>
+				<span class="iconfont icon-backward2"></span>
 			</a>
 		</div>
 		<div class='popup_container'>
 			<div class='popup_wrapper'>
-				<a class='popupclose_btn ybiconfont ybicon-closebtn' href="javascript:;"></a>
+				<a class='popupclose_btn iconfont icon-closebtn' href="javascript:;"></a>
 				<div class='common_avatar_wrapper'>
 					<div class='avatar'>
 						<img src="img/avatar_120_120_00000.jpg">
@@ -37,19 +37,19 @@
 					<p class='title'>对TA的印象</p>
 					<ul>
 						<li>
-							<a class="ybiconfont ybicon-pentagramhollow" href="javascript:;"></a>
+							<a class="iconfont icon-pentagramhollow" href="javascript:;"></a>
 						</li>
 						<li>
-							<a class="ybiconfont ybicon-pentagramhollow" href="javascript:;"></a>
+							<a class="iconfont icon-pentagramhollow" href="javascript:;"></a>
 						</li>
 						<li>
-							<a class="ybiconfont ybicon-pentagramhollow" href="javascript:;"></a>
+							<a class="iconfont icon-pentagramhollow" href="javascript:;"></a>
 						</li>
 						<li>
-							<a class="ybiconfont ybicon-pentagramhollow" href="javascript:;"></a>
+							<a class="iconfont icon-pentagramhollow" href="javascript:;"></a>
 						</li>
 						<li>
-							<a class="ybiconfont ybicon-pentagramhollow" href="javascript:;"></a>
+							<a class="iconfont icon-pentagramhollow" href="javascript:;"></a>
 						</li>
 					</ul>
 					<p class='desc'>实力、幽默、回复太慢</p>
@@ -87,14 +87,14 @@
 					pentagramLiEl = $('.common_pentagram_wrapper li'),
 					thisaEl = $this.find('a'),
 					thisIndex = $this.index();
-				if (thisaEl.hasClass('ybicon-pentagramhollow')) {
-					thisaEl.removeClass('ybicon-pentagramhollow').addClass('ybicon-pentagramsolid active')
+				if (thisaEl.hasClass('icon-pentagramhollow')) {
+					thisaEl.removeClass('icon-pentagramhollow').addClass('icon-pentagramsolid active')
 				}
 				for (var i = 0; i < thisIndex; i++) {
-					pentagramLiEl.eq(i).find('a').removeClass('ybicon-pentagramhollow').addClass('ybicon-pentagramsolid active');
+					pentagramLiEl.eq(i).find('a').removeClass('icon-pentagramhollow').addClass('icon-pentagramsolid active');
 				};
 				for (var i = 4; i > thisIndex; i--) {
-					pentagramLiEl.eq(i).find('a').removeClass('ybicon-pentagramsolid active').addClass('ybicon-pentagramhollow')
+					pentagramLiEl.eq(i).find('a').removeClass('icon-pentagramsolid active').addClass('icon-pentagramhollow')
 				};
 			});
 		})

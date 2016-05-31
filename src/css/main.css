@@ -360,6 +360,7 @@
 /*~~~~~~~~~~chatinterface.html~~~~~~~~~~*/
 
 .chatinterface_main_wrapper {
+	padding: 0 0 2rem 0;
 	background: #e8e8e8;
 }
 .chatinterface_hint_wrapper {

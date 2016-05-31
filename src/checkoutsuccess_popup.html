@@ -9,7 +9,7 @@
 	<meta name="author" content="">
 	<meta name="keywords" content="">
 	<title>下单成功</title>
-	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464126730_9261143.css" type="text/css" media="all">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464688688_4408853.css" type="text/css" media="all">
 	<!-- build:css css/all.min.css -->
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
@@ -21,7 +21,7 @@
 	<div class='main_container'>
 		<div class='common_header_wrapper'>
 			<a class='left_btn back_btn' href='javascript:;'>
-				<span class="ybiconfont ybicon-backward2"></span>
+				<span class="iconfont icon-backward2"></span>
 			</a>
 			<p></p>
 		</div>
@@ -73,14 +73,14 @@
 					pentagramLiEl = $('.common_pentagram_wrapper li'),
 					thisaEl = $this.find('a'),
 					thisIndex = $this.index();
-				if (thisaEl.hasClass('ybicon-pentagramhollow')) {
-					thisaEl.removeClass('ybicon-pentagramhollow').addClass('ybicon-pentagramsolid active')
+				if (thisaEl.hasClass('icon-pentagramhollow')) {
+					thisaEl.removeClass('icon-pentagramhollow').addClass('icon-pentagramsolid active')
 				}
 				for (var i = 0; i < thisIndex; i++) {
-					pentagramLiEl.eq(i).find('a').removeClass('ybicon-pentagramhollow').addClass('ybicon-pentagramsolid active');
+					pentagramLiEl.eq(i).find('a').removeClass('icon-pentagramhollow').addClass('icon-pentagramsolid active');
 				};
 				for (var i = 4; i > thisIndex; i--) {
-					pentagramLiEl.eq(i).find('a').removeClass('ybicon-pentagramsolid active').addClass('ybicon-pentagramhollow')
+					pentagramLiEl.eq(i).find('a').removeClass('icon-pentagramsolid active').addClass('icon-pentagramhollow')
 				};
 			});
 		})

@@ -9,7 +9,7 @@
 	<meta name="author" content="">
 	<meta name="keywords" content="">
 	<title>服务评价</title>
-	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464126730_9261143.css" type="text/css" media="all">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464688688_4408853.css" type="text/css" media="all">
 	<!-- build:css css/all.min.css -->
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
@@ -20,7 +20,7 @@
 <body>
 	<div class='common_header_wrapper bg_00c8b4'>
 		<a class='left_btn back_btn' href='javascript:;'>
-			<span class="ybiconfont ybicon-backward2 color_fff"></span>
+			<span class="iconfont icon-backward2 color_fff"></span>
 		</a>
 		<p class='color_fff'>服务评价</p>
 	</div>
@@ -40,19 +40,19 @@
 		<div class='common_pentagram_wrapper'>
 			<ul>
 				<li>
-					<a class='ybiconfont ybicon-pentagramhollow' href="javascript:;"></a>
+					<a class='iconfont icon-pentagramhollow' href="javascript:;"></a>
 				</li>
 				<li>
-					<a class='ybiconfont ybicon-pentagramhollow' href="javascript:;"></a>
+					<a class='iconfont icon-pentagramhollow' href="javascript:;"></a>
 				</li>
 				<li>
-					<a class='ybiconfont ybicon-pentagramhollow' href="javascript:;"></a>
+					<a class='iconfont icon-pentagramhollow' href="javascript:;"></a>
 				</li>
 				<li>
-					<a class='ybiconfont ybicon-pentagramhollow' href="javascript:;"></a>
+					<a class='iconfont icon-pentagramhollow' href="javascript:;"></a>
 				</li>
 				<li>
-					<a class='ybiconfont ybicon-pentagramhollow' href="javascript:;"></a>
+					<a class='iconfont icon-pentagramhollow' href="javascript:;"></a>
 				</li>
 			</ul>
 		</div>
@@ -109,14 +109,14 @@
 			pentagramLiEl = $('.common_pentagram_wrapper li'),
 			thisaEl = $this.find('a'),
 			thisIndex = $this.index();
-		if (thisaEl.hasClass('ybicon-pentagramhollow')) {
-			thisaEl.removeClass('ybicon-pentagramhollow').addClass('ybicon-pentagramsolid active')
+		if (thisaEl.hasClass('icon-pentagramhollow')) {
+			thisaEl.removeClass('icon-pentagramhollow').addClass('icon-pentagramsolid active')
 		}
 		for (var i = 0; i < thisIndex; i++) {
-			pentagramLiEl.eq(i).find('a').removeClass('ybicon-pentagramhollow').addClass('ybicon-pentagramsolid active');
+			pentagramLiEl.eq(i).find('a').removeClass('icon-pentagramhollow').addClass('icon-pentagramsolid active');
 		};
 		for (var i = 4; i > thisIndex; i--) {
-			pentagramLiEl.eq(i).find('a').removeClass('ybicon-pentagramsolid active').addClass('ybicon-pentagramhollow')
+			pentagramLiEl.eq(i).find('a').removeClass('icon-pentagramsolid active').addClass('icon-pentagramhollow')
 		};
 	});
 	//通用选择器
