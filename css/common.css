@@ -302,6 +302,7 @@ body {
 }
 .common_loadmore_item a {
 	display: inline-block;
+	width: 100%;
 	vertical-align: middle;
 	font-size: 0.6rem;
 }

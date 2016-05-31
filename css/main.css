@@ -315,8 +315,9 @@
 	box-sizing: border-box;
 }
 .evaluate_unsatisfiedhint_wrapper p{
+	margin: 0.5rem 0 0 0;
 	text-align: center;
-	line-height: 1.4rem;
-	font-style: 0.5rem;
+	line-height: 1.1rem;
+	font-size: 0.5rem;
 	color: #e60853
 }
