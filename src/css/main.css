@@ -56,7 +56,7 @@
 	line-height: 1.8rem;
 	text-align: center;
 }
-
+.encouragementpentagram
 /*~~~~~~~~~~index.html~~~~~~~~~~*/
 
 .index_carousel_wrapper {
@@ -206,14 +206,15 @@
 /*~~~~~~~~~~cashister.html~~~~~~~~~~*/
 
 .cash_serviceitem_wrapper {
-	margin: 0 0 0 1rem;
 	padding: 0.5rem 0;
-	width: 15rem;
+	width: 100%;
 	border-top: 1px solid #ccc;
+	background-color: #efefef;
 }
 .cash_serviceitem_wrapper p {
 	font-size: 0.7rem;
 	color: #666;
+	text-align: center;
 }
 .cash_paymentmethod_wrapper ul {
 	text-align: center;
@@ -243,7 +244,7 @@
 	border-radius: 50%;
 	color: #fff;
 }
-.cash_paymentmethod_wrapper .wechat {
+.cash_paymentmethod_wrapper .weipay {
 	background-color: #8dc81b;
 }
 .cash_paymentmethod_wrapper .alipay {
@@ -265,7 +266,9 @@
 }
 
 /*~~~~~~~~~~rapidconsultation.html~~~~~~~~~~*/
-
+.consult_describeissue_item{
+	background-color: #efefef;
+}
 .consult_consultmenu_wrapper {
 	width: 100%;
 }
@@ -278,13 +281,44 @@
 }
 .consult_consultmenu_wrapper td a {
 	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 .consult_consultmenu_wrapper td span {
 	display: block;
-	margin: 0 auto;
+	margin: 0.5rem auto 0;
 	width: 3rem;
 	height: 3rem;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: 0.5rem;
 }
+.consult_consultmenu_wrapper .family span{
+	background-image: url(../img/icon/family_00000.png);
+}
+.consult_consultmenu_wrapper .house span{
+	background-image: url(../img/icon/house_00000.png);
+}
+.consult_consultmenu_wrapper .trafficaccident span{
+	background-image: url(../img/icon/trafficaccident_00000.png);
+}
+.consult_consultmenu_wrapper .contractdebts span{
+	background-image: url(../img/icon/contractdebts_00000.png);
+}
+.consult_consultmenu_wrapper .laboractivist span{
+	background-image: url(../img/icon/laboractivist_00000.png);
+}
+.consult_consultmenu_wrapper .partnership span{
+	background-image: url(../img/icon/partnership_00000.png);
+}
+.consult_consultmenu_wrapper .criminalresponsbility span{
+	background-image: url(../img/icon/criminalresponsbility_00000.png);
+}
+.consult_consultmenu_wrapper .otherconsults span{
+	background-image: url(../img/icon/otherconsults_00000.png);
+}
+
 
 /*~~~~~~~~~~rapidconsultation_step2.html~~~~~~~~~~*/
 
@@ -325,11 +359,6 @@
 
 /*~~~~~~~~~~checkoutsuccess_popup.html~~~~~~~~~~*/
 
-
-/*.consult_placeorder_wrapper{
-	background-color: #e60050;
-}*/
-
 .consult_placeorder_wrapper .prompt {
 	padding: 1rem 0;
 	color: #eee;
@@ -350,11 +379,27 @@
 	position: relative;
 	top: 0;
 }
+.consult_placeorder_wrapper .tackle{
+	display: block;
+	margin: 0.5rem auto;
+	width: 2.5rem;
+}
 .consult_posleaveword_wrapper {
 	padding: 0.5rem;
+	line-height: 1.2rem;
 	font-size: 0.7rem;
 	color: #666;
 	text-align: center;
+}
+.checkoutsuccess_cancel{
+	display: inline-block;
+	width: 8rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	color: #666;
+	font-size: 0.8rem;
+	border: 1px solid #e60050;
+	border-radius: 0.2rem;
 }
 
 /*~~~~~~~~~~chatinterface.html~~~~~~~~~~*/
@@ -380,6 +425,15 @@
 .chatinterface_hint_wrapper .time {
 	font-size: 0.5rem;
 	color: #8a8f92;
+	vertical-align: top;
+}
+.chatinterface_hint_wrapper .time span, .chatinterface_hint_wrapper .time label{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0.5rem;
+}
+.chatinterface_hint_wrapper .time span{
+	margin: 0 0.2rem
 }
 .chatinterface_introduce_wrapper {
 	margin: 0.5rem 0;
@@ -458,7 +512,7 @@
 }
 .chatinterface_dialog_wrapper .interact li a{
 	display: inline-block;
-	padding: 0.3rem 0.5rem;
+	padding: 0.2rem 0.5rem;
 	color: #fff;
 	font-size: 0.6rem;
 	background-color: #2fc8b4;
@@ -481,13 +535,16 @@
 }
 .chatinterface_dialog_wrapper .service ul{
 	border-top: 1px solid #f3f3f3;
-
+	text-align: center;
 }
 .chatinterface_dialog_wrapper .service ul li{
 	display: inline-block;
 	text-align: center;
 	vertical-align: top;
 	font-size: 0;
+}
+.chatinterface_dialog_wrapper .service ul li:first-child{
+	border-right: 1px solid #f3f3f3;
 }
 .chatinterface_dialog_wrapper .service ul li a{
 	display: block;
@@ -512,8 +569,12 @@
 	text-align: right;
 }
 
-
-
+/*~~~~~~~~~~sendthemind_popup.html~~~~~~~~~~*/
+.encouragementpentagram{
+	display: block;
+	margin: 0.5rem auto;
+	width: 4rem;
+}
 
 
 
