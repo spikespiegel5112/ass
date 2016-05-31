@@ -2,6 +2,7 @@ body {
 	height: 100%;
 	font-family: Microsoft YaHei, Verdana, sans-serif, '宋体'!important;
 }
+/*~~~~~~~~~~color~~~~~~~~~~*/
 .color_fff {
 	color: #fff!important;
 }
@@ -15,7 +16,7 @@ body {
 	color: #00c8b4!important;
 }
 
-/*~~~~~~~~~~color~~~~~~~~~~*/
+/*~~~~~~~~~~bg~~~~~~~~~~*/
 
 .bg_f19149 {
 	background-color: #f19149;
@@ -28,6 +29,9 @@ body {
 }
 .bg_47a0fe {
 	background-color: #47a0fe;
+}
+.bg_e8e8e8 {
+	background-color: #e8e8e8;
 }
 .halfwidth{
 	width: 50%;
@@ -613,3 +617,42 @@ body {
 .common_sorryicon_item i {
 	font-style: normal;
 }
+/*~~~~~~~~~~common_input_wrapper~~~~~~~~~~*/
+.common_input_wrapper{
+	width: 100%;
+	height: 2rem;
+	background-color: #fff;
+	position: fixed;
+	bottom: 0;
+	font-size: 0;
+}
+.common_input_wrapper a{
+	display: inline-block;
+	margin: 0.25rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	vertical-align: middle;
+}
+.common_input_wrapper input{
+	display: inline-block;
+	margin: 0.25rem;
+	padding: 0.2rem;
+	box-sizing: border-box;
+	width: 9rem;
+	height: 1.5rem;
+	border: 1px solid #ccc;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

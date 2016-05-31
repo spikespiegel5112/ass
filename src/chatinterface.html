@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<title>聊天界面</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464126730_9261143.css" type="text/css" media="all">
+	<!-- build:css css/all.min.css -->
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+	<!-- endbuild -->
+</head>
+
+<body>
+	<div class='main_container bg_e8e8e8'>
+		<div class='common_header_wrapper'>
+			<a class='left_btn back_btn' href='javascript:;'>
+				<span class="ybiconfont ybicon-backward2"></span>
+			</a>
+			<p>孙律师</p>
+		</div>
+		<div class='chatinterface_main_wrapper'>
+			<div class='chatinterface_hint_wrapper'>
+				<p class='system'>系统提示</p>
+			</div>
+			<p class='chatinterface_introduce_wrapper'>
+				欢迎使用律兜法律服务，本次咨询时间为<span>1小时</span>
+			</p>
+			<div class='chatinterface_hint_wrapper'>
+				<p class='time'><span></span>21:30</p>
+			</div>
+			<div class='chatinterface_dialog_wrapper'>
+				<div class='avatar'></div>
+				<div class='message'>
+					<p class='right'>
+						你好，我想咨询一下关于未过户车辆发生事故原车主应否担责的问题。
+					</p>
+				</div>
+				<div class='avatar'>
+					<a href="javascript:;">
+						<img src="img/avatar_120_120_00000.jpg">
+					</a>
+				</div>
+			</div>
+			<div class='chatinterface_dialog_wrapper'>
+				<div class='avatar'>
+					<a href="javascript:;">
+						<img src="img/avatar_120_120_00000.jpg">
+					</a>
+				</div>
+				<div class='message'>
+					<p class='left'>
+						你好，我想咨询一下关于未过户车辆发生事故原车主应否担责的问题。
+					</p>
+					<ul class='interact'>
+						<li>
+							<a href="javascript:;">
+								<span></span>
+								<label>表心意</label>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span></span>
+								<label>去评价</label>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class='avatar'></div>
+			</div>
+			<div class='chatinterface_hint_wrapper'>
+				<p class='system'>系统提示</p>
+			</div>
+			<div class='chatinterface_dialog_wrapper'>
+				<div class='avatar'></div>
+				<div class='service'>
+					<div>
+						<span></span>
+						<label class='title'>电话服务</label>
+						<label class='price'>15元</label>
+					</div>
+					<p>
+						您好，为保障服务的及时性，电话咨询服务请先跟律师申请确认哦。
+					</p>
+					<ul>
+						<li class='fullwidth'>
+							<a href="javascript:;">
+								发送申请消息
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class='avatar'></div>
+			</div>
+			<div class='chatinterface_hint_wrapper'>
+				<p class='system'>系统提示</p>
+			</div>
+			<div class='chatinterface_dialog_wrapper'>
+				<div class='avatar'></div>
+				<div class='service'>
+					<p>
+						您好，为保障服务的及时性，电话咨询服务请先跟律师申请确认哦。
+					</p>
+					<ul>
+						<li class='fullwidth'>
+							<a href="javascript:;">
+								发送申请消息
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class='avatar'></div>
+			</div>
+		</div>
+		<div class='common_input_wrapper'>
+			<a href="javascript:;"></a>
+			<input type='text'>
+			<a href="javascript:;"></a>
+			<a href="javascript:;"></a>
+		</div>
+	</div>
+
+	<body>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script>
+		$(function() {
+			$.remResizing({
+				fontsize: 20
+			});
+			chatinterface();
+
+		})
+
+		function chatinterface() {
+			$('.main_container').css({
+				'min-height': function() {
+					var height = $(window).height()
+					return height;
+				}
+			})
+		}
+		</script>
+	</body>
+
+</html>

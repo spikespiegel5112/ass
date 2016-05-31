@@ -211,7 +211,6 @@
 	width: 15rem;
 	border-top: 1px solid #ccc;
 }
-
 .cash_serviceitem_wrapper p {
 	font-size: 0.7rem;
 	color: #666;
@@ -255,10 +254,9 @@
 	line-height: 2rem;
 	background-color: #00a3cc;
 }
-.cash_sum_wrapper{
+.cash_sum_wrapper {
 	/*padding: 7rem 0 0 0;*/
 }
-
 .cash_sum_wrapper .sum {
 	display: inline-block;
 	width: 48%;
@@ -289,6 +287,7 @@
 }
 
 /*~~~~~~~~~~rapidconsultation_step2.html~~~~~~~~~~*/
+
 .consult_textarea_item {
 	border: 0;
 	padding: 0.5rem;
@@ -297,15 +296,17 @@
 	font-size: 1rem;
 	box-sizing: border-box;
 }
-.consult_consultmethod_wrapper{
+.consult_consultmethod_wrapper {
 	padding: 0.5rem 0;
 }
 .consult_consultmethod_wrapper li {
 	display: inline-block;
 	margin: 0 3rem 0 0.3rem;
 }
+
 /*~~~~~~~~~~serviceevaluation.html~~~~~~~~~~*/
-.evaluate_textarea_item{
+
+.evaluate_textarea_item {
 	display: block;
 	margin: 1rem auto;
 	width: 95%;
@@ -314,7 +315,7 @@
 	font-size: 0.8rem;
 	box-sizing: border-box;
 }
-.evaluate_unsatisfiedhint_wrapper p{
+.evaluate_unsatisfiedhint_wrapper p {
 	margin: 0.5rem 0 0 0;
 	text-align: center;
 	line-height: 1.1rem;
@@ -323,10 +324,13 @@
 }
 
 /*~~~~~~~~~~checkoutsuccess_popup.html~~~~~~~~~~*/
+
+
 /*.consult_placeorder_wrapper{
 	background-color: #e60050;
 }*/
-.consult_placeorder_wrapper .prompt{
+
+.consult_placeorder_wrapper .prompt {
 	padding: 1rem 0;
 	color: #eee;
 	font-size: 0.8rem;
@@ -335,22 +339,182 @@
 	border-top-left-radius: 0.25rem;
 	border-top-right-radius: 0.25rem;
 }
-.consult_placeorder_wrapper .bg{
+.consult_placeorder_wrapper .bg {
 	background-color: #e60050;
 }
-.consult_placeorder_wrapper .common_avatar_wrapper{
-	
+.consult_placeorder_wrapper .common_avatar_wrapper {
 	border-top-left-radius: 0.25rem;
 	border-top-right-radius: 0.25rem;
 }
-.consult_placeorder_wrapper .common_avatar_wrapper .avatar{
+.consult_placeorder_wrapper .common_avatar_wrapper .avatar {
 	position: relative;
 	top: 0;
-
 }
-.consult_posleaveword_wrapper{
+.consult_posleaveword_wrapper {
 	padding: 0.5rem;
 	font-size: 0.7rem;
 	color: #666;
 	text-align: center;
 }
+
+/*~~~~~~~~~~chatinterface.html~~~~~~~~~~*/
+
+.chatinterface_main_wrapper {
+	background: #e8e8e8;
+}
+.chatinterface_hint_wrapper {
+	margin: 0.3rem 0;
+	width: 100%;
+	text-align: center;
+}
+.chatinterface_hint_wrapper .system {
+	display: inline-block;
+	padding: 0.2rem 0.5rem;
+	border-radius: 2rem;
+	background-color: #bfbfbf;
+	color: #fff;
+	text-align: center;
+	font-size: 0.5rem;
+}
+.chatinterface_hint_wrapper .time {
+	font-size: 0.5rem;
+	color: #8a8f92;
+}
+.chatinterface_introduce_wrapper {
+	margin: 0.5rem 0;
+	width: 100%;
+	text-align: center;
+	color: #646464;
+	font-size: 0.6rem;
+}
+.chatinterface_introduce_wrapper span {
+	color: #e60050;
+}
+.chatinterface_dialog_wrapper {
+	margin: 0.7rem 0;
+}
+.chatinterface_dialog_wrapper .avatar {
+	display: inline-block;
+	margin: 0 0.17rem;
+	width: 2rem;
+	height: 2rem;
+	vertical-align: top;
+}
+.chatinterface_dialog_wrapper .avatar img {
+	display: block;
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 2px 2px 2px #ccc;
+}
+.chatinterface_dialog_wrapper .message{
+	display: inline-block;
+	vertical-align: top;
+}
+.chatinterface_dialog_wrapper .message p{
+	display: inline-block;
+	padding: 0.2rem 0.3rem;
+	width: 10rem;
+	border-radius: 0.3rem;
+	font-size: 0.6rem;
+	
+	position: relative;
+}
+.chatinterface_dialog_wrapper .message .right {
+	background-color: #2fc8b4;
+	color: #fff;
+	border: 1px solid #2fc8b4;
+}
+.chatinterface_dialog_wrapper .message .left {
+	color: #999;
+	background-color: #fff;
+	border: 1px solid #ededed;
+}
+.chatinterface_dialog_wrapper .message p:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0.7rem;
+	border-style: solid;
+	
+}
+.chatinterface_dialog_wrapper .message .left:after {
+	left: -0.3rem;
+	border-width: 0.3rem 0.3rem 0.3rem 0;
+	border-color: transparent #fff transparent transparent;
+}
+.chatinterface_dialog_wrapper .message .right:after {
+	right: -0.3rem;
+	border-width: 0.3rem 0 0.3rem 0.3rem;
+	border-color: transparent transparent transparent #2fc8b4;
+}
+.chatinterface_dialog_wrapper .message .interact{
+	width: 100%;
+}
+.chatinterface_dialog_wrapper .interact li{
+	display: inline-block;
+	margin: 0.4rem 0;
+	text-align: center;
+}
+.chatinterface_dialog_wrapper .interact li a{
+	display: inline-block;
+	padding: 0.3rem 0.5rem;
+	color: #fff;
+	font-size: 0.6rem;
+	background-color: #2fc8b4;
+	border-radius: 1rem;
+}
+.chatinterface_dialog_wrapper .service{
+	display: inline-block;
+	width: 10.7rem;
+	background-color: #fff;
+	border-radius: 0.2rem;
+	overflow: hidden;
+}
+.chatinterface_dialog_wrapper .service p{
+	width: 100%;
+	padding: 0.5rem;
+	line-height: 1rem;
+	font-size: 0.6rem;
+	box-sizing: border-box;
+	border-top: 2px solid #e62758;
+}
+.chatinterface_dialog_wrapper .service ul{
+	border-top: 1px solid #f3f3f3;
+
+}
+.chatinterface_dialog_wrapper .service ul li{
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	font-size: 0;
+}
+.chatinterface_dialog_wrapper .service ul li a{
+	display: block;
+	line-height: 1.5rem;
+	font-size: 0.6rem;
+	height: 1.5rem;
+	color: #e62758;
+}
+.chatinterface_dialog_wrapper .service div{
+	background-color: #e62758;
+}
+.chatinterface_dialog_wrapper .service label, .chatinterface_dialog_wrapper .service span{
+	display: inline-block;
+	color: #fff;
+	font-size: 0.7rem;
+}
+.chatinterface_dialog_wrapper .service .title{
+	width: 5rem;
+}
+.chatinterface_dialog_wrapper .service .price{
+	width: 3rem;
+	text-align: right;
+}
+
+
+
+
+
+
+
+
