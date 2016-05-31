@@ -328,10 +328,12 @@
 }*/
 .consult_placeorder_wrapper .prompt{
 	padding: 1rem 0;
-	color: #ddd;
+	color: #eee;
 	font-size: 0.8rem;
 	text-align: center;
 	background-color: #e60050;
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
 }
 .consult_placeorder_wrapper .bg{
 	background-color: #e60050;
