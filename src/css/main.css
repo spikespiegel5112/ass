@@ -291,8 +291,8 @@
 	width: 3rem;
 	height: 3rem;
 	background-repeat: no-repeat;
-	background-size: 70%;
-	background-position: 0.5rem;
+	background-size: 60%;
+	background-position: 0.6rem;
 }
 .consult_consultmenu_wrapper .family span{
 	background-image: url(../img/icon/family_00000.png);
@@ -360,7 +360,7 @@
 /*~~~~~~~~~~checkoutsuccess_popup.html~~~~~~~~~~*/
 
 .consult_placeorder_wrapper .prompt {
-	padding: 1rem 0;
+	padding: 1rem 0 0 0;
 	color: #eee;
 	font-size: 0.8rem;
 	text-align: center;
@@ -378,6 +378,36 @@
 .consult_placeorder_wrapper .common_avatar_wrapper .avatar {
 	position: relative;
 	top: 0;
+	background-color: #e60050;
+	z-index: 1;
+	border-radius: 50%;
+	text-align: center;
+}
+.consult_placeorder_wrapper .common_avatar_wrapper .countdown {
+	display: inline-block;
+	text-align: center;
+	margin: 15%;
+	width: 70%;
+	height: 70%;
+	background-color: #fff;
+	border-radius: 50%;
+	font-size: 0;
+	color: #e60050;
+	vertical-align: middle;
+}
+.consult_placeorder_wrapper .common_avatar_wrapper .lightspot{
+	position: absolute;
+	top: 0;
+	width: 100%;height: 100%;
+	background-image: url(../img/lightspot_00000.png);
+	background-size: contain;
+}
+
+.consult_placeorder_wrapper .common_avatar_wrapper .countdown span, .consult_placeorder_wrapper .common_avatar_wrapper .countdown label{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0.8rem 0;
+	font-size: 1.6rem;
 }
 .consult_placeorder_wrapper .tackle{
 	display: block;
@@ -553,16 +583,30 @@
 	height: 1.5rem;
 	color: #e62758;
 }
-.chatinterface_dialog_wrapper .service div{
+.chatinterface_dialog_wrapper .service .title_wrapper{
+	padding: 0.2rem 0;
 	background-color: #e62758;
+	font-size: 0;
 }
 .chatinterface_dialog_wrapper .service label, .chatinterface_dialog_wrapper .service span{
 	display: inline-block;
 	color: #fff;
 	font-size: 0.7rem;
+	vertical-align: middle;
+}
+.chatinterface_dialog_wrapper .service span{
+	display: inline-block;
+	margin: 0.1rem 0.2rem 0 0.2rem;
+	width: 1rem;
+	height: 1rem;
+	vertical-align: middle;
+}
+.chatinterface_dialog_wrapper .service .phonecallservice{
+	background: url(../img/icon/phonecallservice_00000.png);
+	background-size: contain;
 }
 .chatinterface_dialog_wrapper .service .title{
-	width: 5rem;
+	width: 5.5rem;
 }
 .chatinterface_dialog_wrapper .service .price{
 	width: 3rem;

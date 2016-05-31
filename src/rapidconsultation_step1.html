@@ -15,8 +15,8 @@
 	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
 	<!-- endbuild -->
-
 </head>
+
 <body>
 	<div class='common_header_wrapper'>
 		<a class='left_btn back_btn' href='javascript:;'>
@@ -106,7 +106,6 @@
 							</a>
 						</td>
 						<td>
-							
 						</td>
 					</tr>
 				</tbody>
@@ -116,14 +115,18 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/base.js"></script>
 	<script>
-	$(function(){
+	$(function() {
 		$.remResizing({
-			fontsize:20
+			fontsize: 20
 		});
+		rapidconsultation_step1();
 	})
-	$('.cash_paymentmethod_wrapper li').on('touchend', function(){
-		$(this).find('.common_checkbox_item').addClass('active').end().siblings().find('.common_checkbox_item').removeClass('active')
-	})
+
+	function rapidconsultation_step1(argument) {
+		$('.cash_paymentmethod_wrapper li').on('touchend', function() {
+			$(this).find('.common_checkbox_item').addClass('active').end().siblings().find('.common_checkbox_item').removeClass('active')
+		})
+	}
 	</script>
 </body>
 

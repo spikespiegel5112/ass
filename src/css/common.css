@@ -323,7 +323,7 @@ body {
 
 .common_block_wrapper {
 	margin: 0.5rem 0 0 0;
-	padding: 0.1rem 0;
+	/*padding: 0.1rem 0;*/
 	width: 100%;
 	background-color: #fff;
 	overflow: hidden;
@@ -339,7 +339,7 @@ body {
 }
 .common_title_item h6 {
 	display: inline-block;
-	width: 75%;
+	width: 85%;
 	font-size: 0.7rem;
 	vertical-align: middle;
 	color: #666;
@@ -349,6 +349,7 @@ body {
 	margin: 0 0.4rem 0 0;
 	width: 0.2rem;
 	height: 100%;
+	text-align: right;
 	vertical-align: middle;
 }
 .common_title_item .titleicon{
@@ -494,6 +495,7 @@ body {
 .common_avatar_wrapper {
 	width: 100%;
 	margin: 0 0 1rem 0;
+	text-align: center;
 }
 
 .common_avatar_wrapper {
@@ -509,7 +511,9 @@ body {
 	top: 0;
 }
 .common_avatar_wrapper .avatar{
-	width: 100%;
+	display: inline-block;
+	width: 5.5rem;
+	height: 5.5rem;
 	text-align: center;
 	font-size: 0;
 	position: relative;
@@ -517,7 +521,7 @@ body {
 .common_avatar_wrapper .avatar img {
 	display: inline-block;
 	/*margin: 1.1rem auto 0;*/
-	width: 5.5rem;
+	
 	position: relative;
 	z-index: 1;
 	border-radius: 50%;
@@ -664,8 +668,6 @@ body {
 	background-position: #fafafa;
 	vertical-align: middle;
 }
-.common_chatinput_wrapper
-
 
 
 
