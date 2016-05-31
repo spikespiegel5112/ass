@@ -188,7 +188,7 @@
 }
 .index_hotspot_wrapper .content .article label {
 	display: block;
-	margin: 0 0 0.6rem 0;
+	margin: 0 0 0.3rem 0;
 	height: 1.9rem;
 	font-size: 0.7rem;
 	overflow: hidden;
@@ -235,7 +235,7 @@
 }
 .cash_paymentmethod_wrapper .icon {
 	display: block;
-	margin: 0.3rem auto;
+	margin: 0 auto;
 	width: 2rem;
 	height: 2rem;
 	text-align: center;
@@ -320,4 +320,35 @@
 	line-height: 1.1rem;
 	font-size: 0.5rem;
 	color: #e60853
+}
+
+/*~~~~~~~~~~checkoutsuccess_popup.html~~~~~~~~~~*/
+/*.consult_placeorder_wrapper{
+	background-color: #e60050;
+}*/
+.consult_placeorder_wrapper .prompt{
+	padding: 1rem 0;
+	color: #ddd;
+	font-size: 0.8rem;
+	text-align: center;
+	background-color: #e60050;
+}
+.consult_placeorder_wrapper .bg{
+	background-color: #e60050;
+}
+.consult_placeorder_wrapper .common_avatar_wrapper{
+	
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
+}
+.consult_placeorder_wrapper .common_avatar_wrapper .avatar{
+	position: relative;
+	top: 0;
+
+}
+.consult_posleaveword_wrapper{
+	padding: 0.5rem;
+	font-size: 0.7rem;
+	color: #666;
+	text-align: center;
 }

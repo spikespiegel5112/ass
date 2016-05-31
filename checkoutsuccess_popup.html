@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="keywords" content="">
-	<title>给律师加加油</title>
+	<title>下单成功</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464126730_9261143.css" type="text/css" media="all">
 	<!-- build:css css/all.min.css -->
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
@@ -23,40 +23,28 @@
 			<a class='left_btn back_btn' href='javascript:;'>
 				<span class="ybiconfont ybicon-backward2"></span>
 			</a>
+			<p></p>
 		</div>
 		<div class='popup_container'>
 			<div class='popup_wrapper'>
-				<a class='popupclose_btn ybiconfont ybicon-closebtn' href="javascript:;"></a>
-				<div class='common_avatar_wrapper'>
-					<div class='avatar'>
-						<img src="img/avatar_120_120_00000.jpg">
+				<div class='consult_placeorder_wrapper'>
+					<p class='prompt'>
+						您已下单成功！<br>已通知4位律师 等待律师反馈
+					</p>
+					<div class='common_avatar_wrapper'>
+						<div class='avatar'>
+							<img src="img/avatar_120_120_00000.jpg">
+						</div>
+						<span class='bg'></span>
 					</div>
-					<h6 class='name'>孙律师</h6>
+
 				</div>
-				<div class="common_pentagram_wrapper">
-					<p class='title'>对TA的印象</p>
-					<ul>
-						<li>
-							<a class="ybiconfont ybicon-pentagramhollow" href="javascript:;"></a>
-						</li>
-						<li>
-							<a class="ybiconfont ybicon-pentagramhollow" href="javascript:;"></a>
-						</li>
-						<li>
-							<a class="ybiconfont ybicon-pentagramhollow" href="javascript:;"></a>
-						</li>
-						<li>
-							<a class="ybiconfont ybicon-pentagramhollow" href="javascript:;"></a>
-						</li>
-						<li>
-							<a class="ybiconfont ybicon-pentagramhollow" href="javascript:;"></a>
-						</li>
-					</ul>
-					<p class='desc'>实力、幽默、回复太慢</p>
-				</div>
+				<p class='consult_posleaveword_wrapper'>
+					心意的价值不在于5块钱还是10块<br>而是尊重与支持！
+				</p>
 				<div class='common_btn_wrapper'>
 					<a class="common_btn_item popupbtn_fullwidth round" href="javascript:;">分享他的名片</a>
-				</div>	
+				</div>
 			</div>
 		</div>
 	</div>
@@ -70,9 +58,7 @@
 				fontsize: 20,
 				basedonnarrow: true
 			});
-			$('.popup_wrapper').align({
-				offsety:20
-			});
+			$('.popup_wrapper').align();
 			//通用选择器
 			$('.common_chooselistround_wrapper li').on('touchend', function() {
 					$(this).addClass('active').siblings().removeClass('active');
