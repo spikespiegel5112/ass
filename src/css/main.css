@@ -401,6 +401,12 @@
 	width: 100%;height: 100%;
 	background-image: url(../img/lightspot_00000.png);
 	background-size: contain;
+	background-position: -0.1rem 0;
+	animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin{
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
 }
 
 .consult_placeorder_wrapper .common_avatar_wrapper .countdown span, .consult_placeorder_wrapper .common_avatar_wrapper .countdown label{

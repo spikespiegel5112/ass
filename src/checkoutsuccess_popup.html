@@ -28,8 +28,8 @@
 			<div class='popup_wrapper'>
 				<div class='consult_placeorder_wrapper'>
 					<p class='prompt'>
-						<img class='tackle' src="img/icon/tackle_00000.png">
-						您已下单成功！<br>已通知4位律师 等待律师反馈
+						<img class='tackle' src="img/icon/tackle_00000.png"> 您已下单成功！
+						<br>已通知4位律师 等待律师反馈
 					</p>
 					<div class='common_avatar_wrapper'>
 						<div class='avatar'>
@@ -43,7 +43,8 @@
 					</div>
 				</div>
 				<p class='consult_posleaveword_wrapper'>
-					心意的价值不在于5块钱还是10块<br>而是尊重与支持！
+					心意的价值不在于5块钱还是10块
+					<br>而是尊重与支持！
 				</p>
 				<div class='common_btn_wrapper'>
 					<a class="checkoutsuccess_cancel" href="javascript:;">取消下单</a>
@@ -64,13 +65,13 @@
 			$('.popup_wrapper').align();
 			//通用选择器
 			$('.common_chooselistround_wrapper li').on('touchend', function() {
-					$(this).addClass('active').siblings().removeClass('active');
-				})
-				//选择支付方式
+				$(this).addClass('active').siblings().removeClass('active');
+			})
+			//选择支付方式
 			$('.cash_paymentmethod_wrapper li').on('touchend', function() {
-					$(this).find('.common_checkbox_item').addClass('active').end().siblings().find('.common_checkbox_item').removeClass('active')
-				})
-				//五角星评分
+				$(this).find('.common_checkbox_item').addClass('active').end().siblings().find('.common_checkbox_item').removeClass('active');
+			})
+			//五角星评分
 			$('.common_pentagram_wrapper li').on('touchend', function() {
 				var $this = $(this),
 					pentagramLiEl = $('.common_pentagram_wrapper li'),
