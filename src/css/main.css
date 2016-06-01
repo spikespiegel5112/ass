@@ -213,7 +213,7 @@
 }
 .cash_serviceitem_wrapper p {
 	font-size: 0.7rem;
-	color: #666;
+	color: #999;
 	text-align: center;
 }
 .cash_paymentmethod_wrapper ul {
@@ -331,11 +331,11 @@
 	box-sizing: border-box;
 }
 .consult_consultmethod_wrapper {
-	padding: 0.5rem 0;
+	padding: 0.5rem 0.5rem 1.5rem 0.5rem;
 }
 .consult_consultmethod_wrapper li {
 	display: inline-block;
-	margin: 0 3rem 0 0.3rem;
+	margin: 0 2rem 0 0.3rem;
 }
 
 /*~~~~~~~~~~serviceevaluation.html~~~~~~~~~~*/
