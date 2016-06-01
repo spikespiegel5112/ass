@@ -255,9 +255,9 @@
 	line-height: 2rem;
 	background-color: #00a3cc;
 }
-.cash_sum_wrapper {
+/*.cash_sum_wrapper {
 	padding: 7rem 0 0 0;
-}
+}*/
 .cash_sum_wrapper .sum {
 	display: inline-block;
 	width: 48%;
@@ -266,7 +266,8 @@
 }
 
 /*~~~~~~~~~~rapidconsultation.html~~~~~~~~~~*/
-.consult_describeissue_item{
+
+.consult_describeissue_item {
 	background-color: #efefef;
 }
 .consult_consultmenu_wrapper {
@@ -294,31 +295,30 @@
 	background-size: 60%;
 	background-position: 0.6rem;
 }
-.consult_consultmenu_wrapper .family span{
+.consult_consultmenu_wrapper .family span {
 	background-image: url(../img/icon/family_00000.png);
 }
-.consult_consultmenu_wrapper .house span{
+.consult_consultmenu_wrapper .house span {
 	background-image: url(../img/icon/house_00000.png);
 }
-.consult_consultmenu_wrapper .trafficaccident span{
+.consult_consultmenu_wrapper .trafficaccident span {
 	background-image: url(../img/icon/trafficaccident_00000.png);
 }
-.consult_consultmenu_wrapper .contractdebts span{
+.consult_consultmenu_wrapper .contractdebts span {
 	background-image: url(../img/icon/contractdebts_00000.png);
 }
-.consult_consultmenu_wrapper .laboractivist span{
+.consult_consultmenu_wrapper .laboractivist span {
 	background-image: url(../img/icon/laboractivist_00000.png);
 }
-.consult_consultmenu_wrapper .partnership span{
+.consult_consultmenu_wrapper .partnership span {
 	background-image: url(../img/icon/partnership_00000.png);
 }
-.consult_consultmenu_wrapper .criminalresponsbility span{
+.consult_consultmenu_wrapper .criminalresponsbility span {
 	background-image: url(../img/icon/criminalresponsbility_00000.png);
 }
-.consult_consultmenu_wrapper .otherconsults span{
+.consult_consultmenu_wrapper .otherconsults span {
 	background-image: url(../img/icon/otherconsults_00000.png);
 }
-
 
 /*~~~~~~~~~~rapidconsultation_step2.html~~~~~~~~~~*/
 
@@ -378,44 +378,51 @@
 .consult_placeorder_wrapper .common_avatar_wrapper .avatar {
 	position: relative;
 	top: 0;
+	margin: 0 auto;
 	background-color: #e60050;
 	z-index: 1;
-	border-radius: 50%;
+	width: 5.5rem;
+	height: 5.5rem;
+	/*border-radius: 50%;*/
 	text-align: center;
 }
 .consult_placeorder_wrapper .common_avatar_wrapper .countdown {
 	display: inline-block;
 	text-align: center;
 	margin: 15%;
-	width: 70%;
-	height: 70%;
+	width: 5.5rem;
+	height: 5.5rem;
 	background-color: #fff;
 	border-radius: 50%;
 	font-size: 0;
 	color: #e60050;
 	vertical-align: middle;
 }
-.consult_placeorder_wrapper .common_avatar_wrapper .lightspot{
+.consult_placeorder_wrapper .common_avatar_wrapper .lightspot {
 	position: absolute;
 	top: 0;
-	width: 100%;height: 100%;
+	width: 5.5rem;
+	height: 5.5rem;
 	background-image: url(../img/lightspot_00000.png);
 	background-size: contain;
 	background-position: -0.1rem 0;
 	animation: spin 1s linear infinite;
 }
-@-webkit-keyframes spin{
-	from {transform:rotate(0deg);}
-	to {transform:rotate(360deg);}
+@-webkit-keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
-
-.consult_placeorder_wrapper .common_avatar_wrapper .countdown span, .consult_placeorder_wrapper .common_avatar_wrapper .countdown label{
+.consult_placeorder_wrapper .common_avatar_wrapper .countdown span, .consult_placeorder_wrapper .common_avatar_wrapper .countdown label {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0.8rem 0;
 	font-size: 1.6rem;
 }
-.consult_placeorder_wrapper .tackle{
+.consult_placeorder_wrapper .tackle {
 	display: block;
 	margin: 0.5rem auto;
 	width: 2.5rem;
@@ -427,7 +434,7 @@
 	color: #666;
 	text-align: center;
 }
-.checkoutsuccess_cancel{
+.checkoutsuccess_cancel {
 	display: inline-block;
 	width: 8rem;
 	height: 1.5rem;
@@ -463,12 +470,12 @@
 	color: #8a8f92;
 	vertical-align: top;
 }
-.chatinterface_hint_wrapper .time span, .chatinterface_hint_wrapper .time label{
+.chatinterface_hint_wrapper .time span, .chatinterface_hint_wrapper .time label {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 0.5rem;
 }
-.chatinterface_hint_wrapper .time span{
+.chatinterface_hint_wrapper .time span {
 	margin: 0 0.2rem
 }
 .chatinterface_introduce_wrapper {
@@ -497,17 +504,16 @@
 	border-radius: 50%;
 	box-shadow: 2px 2px 2px #ccc;
 }
-.chatinterface_dialog_wrapper .message{
+.chatinterface_dialog_wrapper .message {
 	display: inline-block;
 	vertical-align: top;
 }
-.chatinterface_dialog_wrapper .message p{
+.chatinterface_dialog_wrapper .message p {
 	display: inline-block;
 	padding: 0.2rem 0.3rem;
 	width: 10rem;
 	border-radius: 0.3rem;
 	font-size: 0.6rem;
-	
 	position: relative;
 }
 .chatinterface_dialog_wrapper .message .right {
@@ -526,7 +532,6 @@
 	position: absolute;
 	top: 0.7rem;
 	border-style: solid;
-	
 }
 .chatinterface_dialog_wrapper .message .left:after {
 	left: -0.3rem;
@@ -538,15 +543,15 @@
 	border-width: 0.3rem 0 0.3rem 0.3rem;
 	border-color: transparent transparent transparent #2fc8b4;
 }
-.chatinterface_dialog_wrapper .message .interact{
+.chatinterface_dialog_wrapper .message .interact {
 	width: 100%;
 }
-.chatinterface_dialog_wrapper .interact li{
+.chatinterface_dialog_wrapper .interact li {
 	display: inline-block;
 	margin: 0.4rem 0;
 	text-align: center;
 }
-.chatinterface_dialog_wrapper .interact li a{
+.chatinterface_dialog_wrapper .interact li a {
 	display: inline-block;
 	padding: 0.2rem 0.5rem;
 	color: #fff;
@@ -554,14 +559,14 @@
 	background-color: #2fc8b4;
 	border-radius: 1rem;
 }
-.chatinterface_dialog_wrapper .service{
+.chatinterface_dialog_wrapper .service {
 	display: inline-block;
 	width: 10.7rem;
 	background-color: #fff;
 	border-radius: 0.2rem;
 	overflow: hidden;
 }
-.chatinterface_dialog_wrapper .service p{
+.chatinterface_dialog_wrapper .service p {
 	width: 100%;
 	padding: 0.5rem;
 	line-height: 1rem;
@@ -569,64 +574,60 @@
 	box-sizing: border-box;
 	border-top: 2px solid #e62758;
 }
-.chatinterface_dialog_wrapper .service ul{
+.chatinterface_dialog_wrapper .service ul {
 	border-top: 1px solid #f3f3f3;
 	text-align: center;
 }
-.chatinterface_dialog_wrapper .service ul li{
+.chatinterface_dialog_wrapper .service ul li {
 	display: inline-block;
 	text-align: center;
 	vertical-align: top;
 	font-size: 0;
 }
-.chatinterface_dialog_wrapper .service ul li:first-child{
+.chatinterface_dialog_wrapper .service ul li:first-child {
 	border-right: 1px solid #f3f3f3;
 }
-.chatinterface_dialog_wrapper .service ul li a{
+.chatinterface_dialog_wrapper .service ul li a {
 	display: block;
 	line-height: 1.5rem;
 	font-size: 0.6rem;
 	height: 1.5rem;
 	color: #e62758;
 }
-.chatinterface_dialog_wrapper .service .title_wrapper{
+.chatinterface_dialog_wrapper .service .title_wrapper {
 	padding: 0.2rem 0;
 	background-color: #e62758;
 	font-size: 0;
 }
-.chatinterface_dialog_wrapper .service label, .chatinterface_dialog_wrapper .service span{
+.chatinterface_dialog_wrapper .service label, .chatinterface_dialog_wrapper .service span {
 	display: inline-block;
 	color: #fff;
 	font-size: 0.7rem;
 	vertical-align: middle;
 }
-.chatinterface_dialog_wrapper .service span{
+.chatinterface_dialog_wrapper .service span {
 	display: inline-block;
 	margin: 0.1rem 0.2rem 0 0.2rem;
 	width: 1rem;
 	height: 1rem;
 	vertical-align: middle;
 }
-.chatinterface_dialog_wrapper .service .phonecallservice{
+.chatinterface_dialog_wrapper .service .phonecallservice {
 	background: url(../img/icon/phonecallservice_00000.png);
 	background-size: contain;
 }
-.chatinterface_dialog_wrapper .service .title{
+.chatinterface_dialog_wrapper .service .title {
 	width: 5.5rem;
 }
-.chatinterface_dialog_wrapper .service .price{
+.chatinterface_dialog_wrapper .service .price {
 	width: 3rem;
 	text-align: right;
 }
 
 /*~~~~~~~~~~sendthemind_popup.html~~~~~~~~~~*/
-.encouragementpentagram{
+
+.encouragementpentagram {
 	display: block;
 	margin: 0.5rem auto;
 	width: 3rem;
 }
-
-
-
-
-

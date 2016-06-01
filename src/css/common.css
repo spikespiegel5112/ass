@@ -339,7 +339,7 @@ body {
 }
 .common_title_item h6 {
 	display: inline-block;
-	width: 75%;
+	width: 85%;
 	font-size: 0.7rem;
 	vertical-align: middle;
 	color: #666;
@@ -351,6 +351,7 @@ body {
 	height: 100%;
 	text-align: right;
 	vertical-align: middle;
+	font-size: 0.9rem;
 }
 .common_title_item .titleicon{
 	display: inline-block;
