@@ -256,7 +256,7 @@
 	background-color: #00a3cc;
 }
 .cash_sum_wrapper {
-	/*padding: 7rem 0 0 0;*/
+	padding: 7rem 0 0 0;
 }
 .cash_sum_wrapper .sum {
 	display: inline-block;
@@ -623,7 +623,7 @@
 .encouragementpentagram{
 	display: block;
 	margin: 0.5rem auto;
-	width: 4rem;
+	width: 3rem;
 }
 
 

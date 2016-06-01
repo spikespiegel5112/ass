@@ -339,7 +339,7 @@ body {
 }
 .common_title_item h6 {
 	display: inline-block;
-	width: 85%;
+	width: 75%;
 	font-size: 0.7rem;
 	vertical-align: middle;
 	color: #666;
@@ -511,8 +511,8 @@ body {
 	top: 0;
 }
 .common_avatar_wrapper .avatar{
-	display: inline-block;
-	width: 5.5rem;
+	/*display: inline-block;*/
+	width: 100%;
 	height: 5.5rem;
 	text-align: center;
 	font-size: 0;
@@ -520,7 +520,8 @@ body {
 }
 .common_avatar_wrapper .avatar img {
 	display: inline-block;
-	width: 100%;
+	width: 5.5rem;
+	height: 5.5rem;
 	position: relative;
 	z-index: 1;
 	border-radius: 50%;
