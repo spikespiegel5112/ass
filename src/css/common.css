@@ -54,6 +54,21 @@ body {
 	border-radius: 1rem;
 }
 
+.popup_container {
+	width: 100%;
+	height: 100%;
+	background: #8f8f8f;
+	position: fixed;
+	top: 0;
+}
+.popup_wrapper {
+	margin: 1rem auto;
+	width: 13rem;
+	background: #fff;
+	border-radius: 0.25rem;
+	position: relative;
+	font-size: 0;
+}
 /*~~~~~~~~~~common head~~~~~~~~~~*/
 
 .common_header_wrapper {
@@ -339,7 +354,7 @@ body {
 }
 .common_title_item h6 {
 	display: inline-block;
-	width: 85%;
+	width: 75%;
 	font-size: 0.7rem;
 	vertical-align: middle;
 	color: #666;
@@ -670,7 +685,75 @@ body {
 	vertical-align: middle;
 }
 
+/*~~~~~~~~~~common_dialog_wrapper~~~~~~~~~~*/
+.common_dialog_wrapper {
+	display: inline-block;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 0.2rem;
+	overflow: hidden;
+	font-size: 0;
+}
+.common_dialog_wrapper p {
+	width: 100%;
+	padding: 1rem 0;
+	line-height: 1rem;
+	font-size: 0.6rem;
+	box-sizing: border-box;
+	text-align: center;
+	color: #333;
+}
+.common_dialog_wrapper ul {
+	border-top: 1px solid #bbb;
+	text-align: center;
+	font-size: 0;
+}
+.common_dialog_wrapper ul li {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	font-size: 0;
+}
+.common_dialog_wrapper ul li:first-child {
+	border-right: 1px solid #bbb;
+}
+.common_dialog_wrapper ul li a {
+	display: block;
+	line-height: 2rem;
+	font-size: 0.6rem;
+	height: 2rem;
+	color: #333;
+}
+.common_dialog_wrapper .title_wrapper {
+	padding: 0.5rem 0 0 0;
+	font-size: 0;
+	text-align: center;
 
+}
+.common_dialog_wrapper .title {
+	width: 5.5rem;
+	color: #000;
+}
+.common_dialog_wrapper label, .common_dialog_wrapper span {
+	display: inline-block;
+	color: #fff;
+	font-size: 0.7rem;
+	vertical-align: middle;
+}
+.common_dialog_wrapper span {
+	margin: 0.1rem 0.2rem 0 0.2rem;
+	width: 1rem;
+	height: 1rem;
+}
+.common_dialog_wrapper .phonecallservice {
+	background: url(../img/icon/phonecallservice_00000.png);
+	background-size: contain;
+}
+
+.common_dialog_wrapper .price {
+	width: 3rem;
+	text-align: right;
+}
 
 
 

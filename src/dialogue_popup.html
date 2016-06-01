@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<title>聊天界面</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464735951_925767.css" type="text/css" media="all">
+	<!-- build:css css/all.min.css -->
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+	<!-- endbuild -->
+</head>
+
+<body>
+	<div class='main_container bg_e8e8e8'>
+		<div class='common_header_wrapper'>
+			<a class='left_btn back_btn' href='javascript:;'>
+				<span class="iconfont icon-backward1"></span>
+			</a>
+			<p>孙律师</p>
+			<a class='right_btn ' href='javascript:;'>
+				<span class="iconfont icon-receiver"></span>
+			</a>
+		</div>
+		<div class='popup_container'>
+			<div class='popup_wrapper'>
+				<div class='common_dialog_wrapper'>
+					<div class='title_wrapper'>
+						<label class='title'>提示</label>
+					</div>
+					<p>
+						请您对我的服务进行评价
+					</p>
+					<ul>
+						<li class='btn_halfwidth'>
+							<a href="javascript:;">
+								不满意
+							</a>
+						</li>
+						<li class='btn_halfwidth'>
+							<a href="javascript:;">
+								还不错
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<body>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script>
+		$(function() {
+			$.remResizing({
+				fontsize: 20
+			});
+			$('.popup_wrapper').align()
+
+		})
+		</script>
+	</body>
+
+</html>

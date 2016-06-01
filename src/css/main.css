@@ -263,6 +263,7 @@
 	width: 48%;
 	text-align: center;
 	color: #e60853;
+	font-size: 0.8rem;
 }
 
 /*~~~~~~~~~~rapidconsultation.html~~~~~~~~~~*/
@@ -383,15 +384,15 @@
 	z-index: 1;
 	width: 5.5rem;
 	height: 5.5rem;
-	/*border-radius: 50%;*/
+	border-radius: 50%;
 	text-align: center;
 }
 .consult_placeorder_wrapper .common_avatar_wrapper .countdown {
 	display: inline-block;
 	text-align: center;
-	margin: 15%;
-	width: 5.5rem;
-	height: 5.5rem;
+	margin: 0.75rem 0;
+	width: 4rem;
+	height: 4rem;
 	background-color: #fff;
 	border-radius: 50%;
 	font-size: 0;
@@ -493,7 +494,7 @@
 }
 .chatinterface_dialog_wrapper .avatar {
 	display: inline-block;
-	margin: 0 0.17rem;
+	margin: 0 0.07rem;
 	width: 2rem;
 	height: 2rem;
 	vertical-align: top;
@@ -559,75 +560,100 @@
 	background-color: #2fc8b4;
 	border-radius: 1rem;
 }
-.chatinterface_dialog_wrapper .service {
-	display: inline-block;
+.chatinterface_dialog_wrapper .common_dialog_wrapper{
 	width: 10.7rem;
-	background-color: #fff;
-	border-radius: 0.2rem;
-	overflow: hidden;
 }
-.chatinterface_dialog_wrapper .service p {
-	width: 100%;
-	padding: 0.5rem;
-	line-height: 1rem;
-	font-size: 0.6rem;
-	box-sizing: border-box;
-	border-top: 2px solid #e62758;
-}
-.chatinterface_dialog_wrapper .service ul {
-	border-top: 1px solid #f3f3f3;
-	text-align: center;
-}
-.chatinterface_dialog_wrapper .service ul li {
-	display: inline-block;
-	text-align: center;
-	vertical-align: top;
-	font-size: 0;
-}
-.chatinterface_dialog_wrapper .service ul li:first-child {
-	border-right: 1px solid #f3f3f3;
-}
-.chatinterface_dialog_wrapper .service ul li a {
-	display: block;
-	line-height: 1.5rem;
-	font-size: 0.6rem;
-	height: 1.5rem;
-	color: #e62758;
-}
-.chatinterface_dialog_wrapper .service .title_wrapper {
+.chatinterface_dialog_wrapper .common_dialog_wrapper .title_wrapper {
 	padding: 0.2rem 0;
 	background-color: #e62758;
-	font-size: 0;
+	text-align: left;
+	
 }
-.chatinterface_dialog_wrapper .service label, .chatinterface_dialog_wrapper .service span {
-	display: inline-block;
+.chatinterface_dialog_wrapper .common_dialog_wrapper .title{
 	color: #fff;
-	font-size: 0.7rem;
-	vertical-align: middle;
 }
-.chatinterface_dialog_wrapper .service span {
-	display: inline-block;
-	margin: 0.1rem 0.2rem 0 0.2rem;
-	width: 1rem;
-	height: 1rem;
-	vertical-align: middle;
+.chatinterface_dialog_wrapper .common_dialog_wrapper p {
+	padding: 0.5rem 0;
+	border-top: 2px solid #e62758;
 }
-.chatinterface_dialog_wrapper .service .phonecallservice {
-	background: url(../img/icon/phonecallservice_00000.png);
-	background-size: contain;
+.chatinterface_dialog_wrapper .common_dialog_wrapper ul li:first-child {
+	border-right: 1px solid #f3f3f3;
 }
-.chatinterface_dialog_wrapper .service .title {
-	width: 5.5rem;
+.chatinterface_dialog_wrapper .common_dialog_wrapper ul {
+	border-top: 1px solid #f3f3f3;
 }
-.chatinterface_dialog_wrapper .service .price {
-	width: 3rem;
-	text-align: right;
+.chatinterface_dialog_wrapper .common_dialog_wrapper ul li a {
+	color: #e62758;
 }
-
 /*~~~~~~~~~~sendthemind_popup.html~~~~~~~~~~*/
 
 .encouragementpentagram {
 	display: block;
 	margin: 0.5rem auto;
 	width: 3rem;
+}
+
+/*~~~~~~~~~~draftingoflegalinstruments.html~~~~~~~~~~*/
+.drafting_list_wrapper>li{
+	border-bottom: 1px solid #efefef;
+}
+.drafting_list_wrapper li{
+	width: 100%;
+	line-height: 1.5rem;
+	font-size: 0;
+	position: relative;
+	box-sizing: border-box;
+}
+.drafting_list_wrapper li label{
+	display: inline-block;
+	padding: 0 0 0 0.5rem;
+	width: 9rem;
+	height: 1.7rem;
+	line-height: 1.7rem;
+	font-size: 0.6rem;
+	vertical-align: top;
+}
+.drafting_list_wrapper li>p{
+	display: inline-block;
+	padding: 0 1.5rem 0 0;
+	width: 5rem;
+	height: 1.7rem;
+	font-size: 0.6rem;
+	text-align: right;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.drafting_list_wrapper li>a{
+	display: inline-block;
+	width: 8.5rem;
+	text-align: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.drafting_list_wrapper li>a p{
+	display: inline-block;
+	width: 7rem;
+	height: 1.7rem;
+	line-height: 1.7rem;
+	color: #000;
+	font-size: 0.6rem;
+}
+.drafting_list_wrapper li>a p i{
+	font-style: normal;
+	color: #ff9900;
+}
+.drafting_list_wrapper li>a span{
+	display: inline-block;
+	text-align: center;
+	width: 1.5rem;
+	font-size: 0.6rem;
+}
+.drafting_list_wrapper li .price{
+	color: #e60853;
+}
+.drafting_pulldownlist_wrapper{
+	display: none;
+	background-color: #dcdcdc;
 }

@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="keywords" content="">
-	<title>文书代写</title>
+	<title>律师函</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464735951_925767.css" type="text/css" media="all">
 	<!-- build:css css/all.min.css -->
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
@@ -22,54 +22,19 @@
 		<a class='left_btn back_btn' href='javascript:;'>
 			<span class="iconfont icon-backward2"></span>
 		</a>
-		<p>文书代写</p>
+		<p>律师函</p>
 	</div>
 	<div class='main_container bg_efefef'>
 		<div class='common_block_wrapper'>
 			<ul class='drafting_list_wrapper'>
 				<li>
-					<label>名称</label>
+					<label>案由</label>
 					<p>
-						财产公证文书
+						合同纠纷
 					</p>
 				</li>
 				<li>
-					<label>工时预估</label>
-					<a>
-						<p>
-							5小时
-						</p>
-						<span class='iconfont icon-down1'></span>
-					</a>
-					<ul class='drafting_pulldownlist_wrapper'>
-						<li>
-							<label>需求沟通</label>
-							<p>
-								0.5小时
-							</p>
-						</li>
-						<li>
-							<label>查阅检索</label>
-							<p>
-								1小时
-							</p>
-						</li>
-						<li>
-							<label>案情梳理</label>
-							<p>
-								1小时
-							</p>
-						</li>
-						<li>
-							<label>文书撰写</label>
-							<p>
-								2.5小时
-							</p>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<label>交付时间</label>
+					<label>交付时间（不包括快递送达时间）</label>
 					<p>
 						2015-5-21
 					</p>
@@ -79,21 +44,9 @@
 		<div class='common_block_wrapper'>
 			<ul class='drafting_list_wrapper'>
 				<li>
-					<label>文书价格</label>
+					<label>价格</label>
 					<p class='price'>
 						￥1000
-					</p>
-				</li>
-				<li>
-					<label>加急费</label>
-					<p class='price'>
-						￥100
-					</p>
-				</li>
-				<li>
-					<label>折扣</label>
-					<p class='price'>
-						-￥20
 					</p>
 				</li>
 				<li>
@@ -146,6 +99,7 @@
 			draftingoflegalinstruments();
 		})
 		function draftingoflegalinstruments(){
+			
 			$('.drafting_list_wrapper li>a').on('touchend', function(){
 				var pulllistEl=$(this).siblings('.drafting_pulldownlist_wrapper');
 				if (pulllistEl.is(':hidden')) {
