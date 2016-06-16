@@ -343,6 +343,8 @@ body {
 	background-color: #fff;
 	overflow: hidden;
 }
+
+
 .common_title_item {
 	padding: 0.6rem;
 	width: 100%;
@@ -664,7 +666,7 @@ body {
 }
 .common_chatinput_wrapper a{
 	display: inline-block;
-	margin: 0.25rem;
+	padding: 0.25rem;
 	width: 1.2rem;
 	height: 1.5rem;
 	line-height: 1.5rem;
@@ -681,7 +683,7 @@ body {
 	height: 1.5rem;
 	border: 1px solid #ccc;
 	border-radius: 0.3rem;
-	background-position: #fafafa;
+	background-color: #fafafa;
 	vertical-align: middle;
 }
 
