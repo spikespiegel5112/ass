@@ -675,7 +675,7 @@ body {
 	vertical-align: middle;
 	text-align: center;
 }
-.common_chatinput_wrapper input{
+.common_chatinput_wrapper textarea{
 	display: inline-block;
 	margin: 0.25rem;
 	padding: 0.2rem;
