@@ -277,7 +277,7 @@ body {
 	background: #fff;
 	text-align: center;
 	font-size: 1rem;
-	color: #333;
+	color: #666;
 	z-index: 1;
 }
 .common_popuptitle_item {
@@ -314,6 +314,7 @@ body {
 	height: 2rem;
 	line-height: 2rem;
 	color: #fff;
+	font-size: 0.8rem;
 }
 
 /*~~~~~~~~~~common_loadmore_item~~~~~~~~~~*/
