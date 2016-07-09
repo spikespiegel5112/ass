@@ -262,7 +262,14 @@ body {
 .ybwechatbtn_item[disable='disable'] {
 	background: #d1d1d1;
 }
-
+/*~~~~~~~~~~common_footer_wrapper~~~~~~~~~~*/
+.common_footer_wrapper{
+	padding: 0.5rem 0;
+	text-align: center;
+	color: #ccc;
+	font-size: 0.6rem;
+	background-color: #fff;
+}
 /*~~~~~~~~~~popupclose_btn~~~~~~~~~~*/
 
 .popupclose_btn {
